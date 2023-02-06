@@ -103,4 +103,8 @@ remote_theme: EvanNotFound/hexo-theme-redefine
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/JasonMa0012/Blog.git #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
+  # branch: [gh-pages]
+  # message: [message]
+  # token: SHA256:GN1rAo5nPerhXqVeBRPueTOhSf0NKAbncxTdhYlIbOU
