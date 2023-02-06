@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-#theme: redefine
+theme: redefine
 remote_theme: EvanNotFound/hexo-theme-redefine
 
 # Deployment
