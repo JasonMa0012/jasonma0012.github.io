@@ -256,7 +256,7 @@ fontawesome: # select fontawesome versions you want to use, in order to reduce t
 # ---------------------------------------------------------------------------------------
 footer:
   runtime: true # show website running time or not
-  start_time: 2022/8/17 11:45:14 # the starting time of your website, format: yyyy/mm/dd hh:mm:ss
+  start_time: 2023/2/8 11:45:14 # the starting time of your website, format: yyyy/mm/dd hh:mm:ss
   customize:  # customize footer message, can be html code
   icp: # ICP record number of your website, Can be null
 
