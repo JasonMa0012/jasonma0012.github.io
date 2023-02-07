@@ -3046,19 +3046,19 @@ pre .deletion {
 }
 @media (prefers-color-scheme: light) {
   .first-screen-container {
-    background: url("https://evan.beee.top/img/wallhaven-wqery6-light.webp") center center/cover no-repeat !important;
+    background: url("/images/background_image_light.jpg") center center/cover no-repeat !important;
   }
 }
 @media (prefers-color-scheme: dark) {
   .first-screen-container {
-    background: url("https://evan.beee.top/img/wallhaven-wqery6-dark.webp") center center/cover no-repeat !important;
+    background: url("/images/background_image_dark.jpg") center center/cover no-repeat !important;
   }
 }
 .light-mode .first-screen-container {
-  background: url("https://evan.beee.top/img/wallhaven-wqery6-light.webp") center center/cover no-repeat !important;
+  background: url("/images/background_image_light.jpg") center center/cover no-repeat !important;
 }
 .dark-mode .first-screen-container {
-  background: url("https://evan.beee.top/img/wallhaven-wqery6-dark.webp") center center/cover no-repeat !important;
+  background: url("/images/background_image_dark.jpg") center center/cover no-repeat !important;
 }
 .image-viewer-container {
   position: fixed;
