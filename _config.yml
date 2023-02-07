@@ -97,14 +97,14 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-# remote_theme: EvanNotFound/hexo-theme-redefine
 theme: redefine
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: https://github.com/JasonMa0012/Blog.git #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
+  type: ''
+  # type: git
+  # repo: https://github.com/JasonMa0012/Blog.git #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
   # branch: [gh-pages]
   # message: [message]
   # token: SHA256:GN1rAo5nPerhXqVeBRPueTOhSf0NKAbncxTdhYlIbOU
