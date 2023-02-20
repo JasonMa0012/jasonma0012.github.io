@@ -473,10 +473,13 @@ button {
 }
 .markdown-body blockquote {
   box-sizing: border-box;
-  border-left: 5px solid var(--default-text-color);
   margin: 20px 0;
   color: var(--default-text-color);
   background: var(--third-background-color);
+  padding: 0 1rem 0 0.5rem;
+  border-radius: 0 14px 14px 0;
+  position: relative;
+  border-left: 5px solid var(--default-text-color);
 }
 .markdown-body blockquote p,
 .markdown-body blockquote ul,
@@ -998,14 +1001,14 @@ pre,
   overflow: auto;
   margin: 20px 0;
   padding: 0;
-  font-size: 0.96rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   color: var(--highlight-foreground);
   background: var(--highlight-background);
 }
 pre,
 code {
-  font-family: 'Courier', Courier, monospace;
+  font-family: "Ubuntu Mono", Courier, monospace;
 }
 code {
   padding: 4px;
@@ -1027,7 +1030,26 @@ pre code {
 .highlight {
   border-radius: 0px 0px 18px 18px;
   padding-bottom: 5px;
+  overflow: auto;
   border-top: 1px solid var(--shadow-color-1);
+}
+.highlight:hover::-webkit-scrollbar-thumb {
+  border: 3px solid rgba(183,183,183,0.3);
+}
+.highlight::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  transition: all 0.2s ease;
+  display: block;
+}
+.highlight::-webkit-scrollbar-track {
+  background: transparent;
+  border: none;
+}
+.highlight::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  border: 3px solid rgba(183,183,183,0);
+  transition: all 0.2s ease;
 }
 .highlight pre {
   border: none;
@@ -1232,6 +1254,18 @@ pre .deletion {
   box-shadow: var(--redefine-box-shadow-flat);
   padding-top: 20px;
   margin-top: 10px;
+  position: relative;
+}
+.highlight-container[data-rel] figcaption {
+  font-weight: bold;
+  font-size: 16px;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.highlight-container[data-rel] figcaption a {
+  margin-left: 10px;
 }
 .highlight-container[data-rel]::before {
   position: absolute;
@@ -1769,6 +1803,7 @@ pre .deletion {
 }
 .page-container .right-bottom-side-tools.hide {
   opacity: 0;
+  pointer-events: none;
   transition: opacity 0.2s ease;
 }
 .search-pop-overlay {
@@ -2029,6 +2064,8 @@ pre .deletion {
   margin: 10px 0;
   font-size: 1.38rem;
   color: var(--default-text-color);
+  font-family: "Noto Sans", "Noto Sans SC", sans-serif;
+  font-weight: bold;
 }
 .comments-container .comment-area-title i {
   color: var(--default-text-color);
@@ -2201,12 +2238,15 @@ pre .deletion {
 }
 .menu-wrapper .menu-content .right .pc .menu-list .menu-item {
   float: left;
-  padding: 5px;
   position: relative;
   margin-left: 30px;
   font-size: 1rem;
   cursor: pointer;
   color: var(--default-text-color);
+}
+.menu-wrapper .menu-content .right .pc .menu-list .menu-item a {
+  display: block;
+  padding: 5px;
 }
 .menu-wrapper .menu-content .right .pc .menu-list .menu-item:first-child {
   margin-left: 0;
@@ -2254,7 +2294,7 @@ pre .deletion {
   -webkit-transform: translate(-50%, 0);
   -o-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
-  margin-top: 8px;
+  margin-top: 0px;
   width: auto;
   text-align: center;
   list-style: none;
@@ -2801,6 +2841,108 @@ pre .deletion {
 .footer .icon-animate {
   animation: icon-animate 1.2s ease-in-out infinite;
 }
+.footer .odometer.odometer-auto-theme,
+.footer .odometer.odometer-theme-default {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+}
+.footer .odometer.odometer-auto-theme .odometer-digit,
+.footer .odometer.odometer-theme-default .odometer-digit {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+}
+.footer .odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer,
+.footer .odometer.odometer-theme-default .odometer-digit .odometer-digit-spacer {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  visibility: hidden;
+}
+.footer .odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner,
+.footer .odometer.odometer-theme-default .odometer-digit .odometer-digit-inner {
+  text-align: left;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.footer .odometer.odometer-auto-theme .odometer-digit .odometer-ribbon,
+.footer .odometer.odometer-theme-default .odometer-digit .odometer-ribbon {
+  display: block;
+}
+.footer .odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner,
+.footer .odometer.odometer-theme-default .odometer-digit .odometer-ribbon-inner {
+  display: block;
+  -webkit-backface-visibility: hidden;
+}
+.footer .odometer.odometer-auto-theme .odometer-digit .odometer-value,
+.footer .odometer.odometer-theme-default .odometer-digit .odometer-value {
+  display: block;
+  -webkit-transform: translateZ(0);
+}
+.footer .odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value,
+.footer .odometer.odometer-theme-default .odometer-digit .odometer-value.odometer-last-value {
+  position: absolute;
+}
+.footer .odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner,
+.footer .odometer.odometer-theme-default.odometer-animating-up .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 999ms;
+  -moz-transition: -moz-transform 999ms;
+  -ms-transition: -ms-transform 999ms;
+  -o-transition: -o-transform 999ms;
+  transition: transform 999ms;
+}
+.footer .odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner,
+.footer .odometer.odometer-theme-default.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.footer .odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner,
+.footer .odometer.odometer-theme-default.odometer-animating-down .odometer-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.footer .odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner,
+.footer .odometer.odometer-theme-default.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 999ms;
+  -moz-transition: -moz-transform 999ms;
+  -ms-transition: -ms-transform 999ms;
+  -o-transition: -o-transform 999ms;
+  transition: transform 999ms;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+.footer .odometer.odometer-auto-theme,
+.footer .odometer.odometer-theme-default {
+  font-family: "Helvetica Neue", sans-serif;
+  line-height: 1.1em;
+}
+.footer .odometer.odometer-auto-theme .odometer-value,
+.footer .odometer.odometer-theme-default .odometer-value {
+  text-align: center;
+}
 .paginator {
   font-size: 1rem;
   margin-top: 30px;
@@ -2862,10 +3004,21 @@ pre .deletion {
 .page-template-container .page-template-content h6:first-child {
   margin-top: 0;
 }
+.page-template-container .friends-link-container .friend-links-title {
+  color: var(--second-text-color);
+  margin-top: -10px;
+}
+.page-template-container .friends-link-container .friend-links-title .article-title-regular {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: bold;
+  color: var(--second-text-color);
+}
 .page-template-container .friends-link-container .friends-link-list {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 .page-template-container .friends-link-container .friends-link-list .friends-link-item {
   box-sizing: border-box;
@@ -3002,7 +3155,6 @@ pre .deletion {
 .first-screen-container .content {
   position: relative;
   box-sizing: border-box;
-  min-width: 80vh;
   min-height: 90vh;
 }
 .first-screen-container .content .description {
@@ -3159,6 +3311,26 @@ pre .deletion {
 }
 .article-meta-info .article-meta-item:last-child {
   margin-right: 0;
+}
+.article-meta-info .article-date {
+  position: relative;
+}
+.article-meta-info .article-date .hover-info {
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.3s;
+  top: 1.5rem;
+  left: 50%;
+  width: auto;
+  transform: translateX(-50%);
+  border: 1px solid var(--border-color);
+  padding: 0 5px;
+  border-radius: 9px;
+  background-color: var(--second-background-color);
+}
+.article-meta-info .article-date:hover .hover-info {
+  opacity: 1;
+  transition: opacity 0.2s;
 }
 .article-meta-info .article-date .mobile {
   display: none;
@@ -3443,6 +3615,24 @@ pre .deletion {
 .post-page-container.show-toc .toc-content-container {
   display: block;
 }
+.post-page-container.show-toc .toc-content-container:hover::-webkit-scrollbar-thumb {
+  border: 3px solid rgba(183,183,183,0.3);
+}
+.post-page-container.show-toc .toc-content-container::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  transition: all 0.2s ease;
+  display: block;
+}
+.post-page-container.show-toc .toc-content-container::-webkit-scrollbar-track {
+  background: transparent;
+  border: none;
+}
+.post-page-container.show-toc .toc-content-container::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  border: 3px solid rgba(183,183,183,0);
+  transition: all 0.2s ease;
+}
 .post-page-container.show-toc .article-content-container {
   width: calc(100% - 210px) !important;
 }
@@ -3584,13 +3774,12 @@ pre .deletion {
   padding: 1px;
   box-sizing: border-box;
   border: 1px solid var(--border-color);
-  border-radius: 50%;
+  border-radius: 14px;
 }
 .post-page-container .article-content-container .article-header .avatar img {
-  border-radius: 50%;
+  border-radius: 12.18px;
   width: 100%;
   height: 100%;
-  background: var(--avatar-background-color);
 }
 .post-page-container .article-content-container .article-header .info {
   padding: 2px 0;
@@ -3768,6 +3957,94 @@ pre .deletion {
     display: none;
   }
 }
+.post-page-container .article-content-container .recommended-article {
+  overflow: visible !important;
+}
+.post-page-container .article-content-container .recommended-article .recommended-article-header {
+  margin: 2rem 0 0.8rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.post-page-container .article-content-container .recommended-article .recommended-article-group {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: visible !important;
+}
+@media screen and (max-width: $device-tablet) {
+  .post-page-container .article-content-container .recommended-article .recommended-article-group {
+    height: 190px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+  }
+  .post-page-container .article-content-container .recommended-article .recommended-article-group::-webkit-scrollbar {
+    width: 0 !important;
+  }
+}
+.post-page-container .article-content-container .recommended-article .recommended-article-group .recommended-article-item {
+  padding: 10px;
+  border-radius: 18px;
+  box-sizing: border-box;
+  background: var(--background-color);
+  box-shadow: var(--redefine-box-shadow);
+  box-shadow: var(--redefine-box-shadow-flat);
+  padding: 12px !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: calc(100%/3 - 18px);
+  max-height: 200px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 0;
+}
+.post-page-container .article-content-container .recommended-article .recommended-article-group .recommended-article-item:hover {
+  box-shadow: var(--redefine-box-shadow-hover);
+}
+@media (max-width: 780px) {
+  .post-page-container .article-content-container .recommended-article .recommended-article-group .recommended-article-item {
+    padding: 8px;
+    border-radius: 14.4px;
+  }
+}
+@media (max-width: 500px) {
+  .post-page-container .article-content-container .recommended-article .recommended-article-group .recommended-article-item {
+    padding: 6px;
+    border-radius: 10.799999999999999px;
+  }
+}
+@media screen and (max-width: $device-tablet) {
+  .post-page-container .article-content-container .recommended-article .recommended-article-group .recommended-article-item {
+    width: calc(100%/2 - 18px);
+  }
+}
+@media screen and (max-width: $device-mobile) {
+  .post-page-container .article-content-container .recommended-article .recommended-article-group .recommended-article-item {
+    width: calc(100% - 18px);
+  }
+}
+.post-page-container .article-content-container .recommended-article .recommended-article-group .recommended-article-item:nth-child(3n+1) {
+  margin-left: 0 !important;
+}
+.post-page-container .article-content-container .recommended-article .recommended-article-group .recommended-article-item img {
+  display: flex;
+  width: calc(100% + 24px);
+  height: 150px;
+  object-fit: cover;
+  border-radius: 14px 14px 0px 0px;
+  margin: -12px -12px 0 -12px !important;
+}
+.post-page-container .article-content-container .recommended-article .recommended-article-group .recommended-article-item span {
+  margin-top: 0.5rem;
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
 .post-page-container .toc-content-container {
   position: sticky;
   top: 108px;
@@ -3933,6 +4210,21 @@ pre .deletion {
   padding: 10px 8px;
   display: inline-block;
   box-sizing: border-box;
+}
+.nf-container {
+  width: 100%;
+  text-align: center;
+}
+.nf-text {
+  vertical-align: middle;
+}
+.nf-text h1 {
+  line-height: 1;
+  font-size: 100px;
+  vertical-align: baseline;
+  display: inline-block;
+  padding-right: 12px;
+  color: var(first-text-color);
 }
 .note-large {
   box-shadow: var(--redefine-box-shadow-flat);

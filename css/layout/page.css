@@ -81,5 +81,6 @@ redefine-mobile()
 }
 .page-container .right-bottom-side-tools.hide {
   opacity: 0;
+  pointer-events: none;
   transition: opacity 0.2s ease;
 }

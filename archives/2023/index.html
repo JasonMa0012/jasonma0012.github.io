@@ -10,6 +10,19 @@
     <!--- Seo Part-->
     
     <link rel="canonical" href="https://elysium.jason-ma.com/archives/2023/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Elysium">
+    <meta property="og:description" content="Hexo Theme Redefine">
+    <meta property="og:url" content="https://elysium.jason-ma.comarchives/2023/index.html">
+    <meta property="og:image" content="/images/redefine-logo.svg">
+    <meta property="og:site_name" content="Elysium">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Elysium">
+    <meta name="twitter:description" content="Hexo Theme Redefine">
+    <meta name="twitter:image" content="/images/redefine-logo.svg">
     <!--- Icon Part-->
     <link rel="icon" type="image/png" href="/images/redefine-logo.svg" sizes="192x192">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/redefine-logo.svg">
@@ -18,7 +31,7 @@
     
     <title>
         
-            归档: 2023 |
+            归档: 2023 -
         
         Elysium
     </title>
@@ -26,28 +39,30 @@
 <link rel="stylesheet" href="/css/style.css">
 
     
-<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="/assets/fonts.css">
 
     
-    <link rel="preconnect" href="https://evan.beee.top" crossorigin>
+    
+    
+    
     <script id="hexo-configurations">
     let REDEFINE = window.REDEFINE || {};
     REDEFINE.hexo_config = {"hostname":"elysium.jason-ma.com","root":"/","language":"zh-CN"};
-    REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/redefine-avatar.svg","favicon":"/images/redefine-logo.svg","article_img_align":"center","right_side_width":"210px","content_max_width":"1000px","nav_color":{"left":"#f78736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_image":{"light":"/images/background_image_light.jpg","dark":"/images/background_image_dark.jpg"},"title_color":{"light":"#fff","dark":"#d1d1b6"},"description":null},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":true},"code_block":{"copy":true,"style":"mac"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"1.1.0","friend_links":{"columns":2}};
+    REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/redefine-avatar.svg","favicon":"/images/redefine-logo.svg","article_img_align":"center","right_side_width":"210px","content_max_width":"1000px","nav_color":{"left":"#f78736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_image":{"light":"/images/background_image_light.jpg","dark":"/images/background_image_dark.jpg"},"title_color":{"light":"#fff","dark":"#d1d1b6"},"description":null,"custom_font":{"enable":false,"font_family":null,"font_url":null}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":false}}},"local_search":{"enable":false,"preload":true},"code_block":{"copy":true,"style":"mac","custom_font":{"enable":false,"font_family":null,"font_url":null}},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"1.1.0","friend_links":{"columns":2},"home_article":{"date_format":"auto","category":{"enable":true,"limit":3},"tag":{"enable":true,"limit":3}}};
     REDEFINE.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
   </script>
     
     
-<link rel="stylesheet" href="/css/fontawesome.min.css">
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
 
     
-<link rel="stylesheet" href="/css/brands.min.css">
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
 
     
-<link rel="stylesheet" href="/css/solid.min.css">
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
 
     
-<link rel="stylesheet" href="/css/regular.min.css">
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
 
     
     
@@ -172,16 +187,16 @@
                 
                     <li class="article-item">
                         <a class="article-title"
-                           href="/2023/02/09/hello-world/"
+                           href="/2023/02/20/hello-world/"
                         >Hello World</a>
-                        <span class="article-date">02-09</span>
+                        <span class="article-date">02-20</span>
                     </li>
                 
                     <li class="article-item">
                         <a class="article-title"
-                           href="/2023/02/09/%E4%B8%BB%E9%A2%98%E6%B5%8B%E8%AF%95/"
+                           href="/2023/02/20/%E4%B8%BB%E9%A2%98%E6%B5%8B%E8%AF%95/"
                         >主题测试</a>
-                        <span class="article-date">02-09</span>
+                        <span class="article-date">02-20</span>
                     </li>
                 
             </ul>
@@ -243,18 +258,20 @@
         
         
         
-            <script async data-pjax defer>
-                function odometer_init(){
-                        let el = document.getElementsByClassName('odometer');
-                        for (i = 0; i < el.length; i++) {
-                            od = new Odometer({
-                                el: el[i],
-                                format: '( ddd).dd',
-                                duration: 200
-                            });
-                        }
-                }
-                odometer_init();
+            <script async data-pjax>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
             </script>
         
         
@@ -355,7 +372,7 @@
 <script src="/js/layouts/odometer.min.js"></script>
 
     
-<link rel="stylesheet" href="/css/odometer-theme-minimal.css">
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
 
 
 

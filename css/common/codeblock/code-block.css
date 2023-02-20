@@ -59,6 +59,18 @@
   box-shadow: var(--redefine-box-shadow-flat);
   padding-top: 20px;
   margin-top: 10px;
+  position: relative;
+}
+.highlight-container[data-rel] figcaption {
+  font-weight: bold;
+  font-size: 16px;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.highlight-container[data-rel] figcaption a {
+  margin-left: 10px;
 }
 .highlight-container[data-rel]::before {
   position: absolute;

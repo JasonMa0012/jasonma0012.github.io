@@ -327,14 +327,14 @@ pre,
   overflow: auto;
   margin: 20px 0;
   padding: 0;
-  font-size: 0.96rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   color: var(--highlight-foreground);
   background: var(--highlight-background);
 }
 pre,
 code {
-  font-family: 'Courier', Courier, monospace;
+  font-family: "Ubuntu Mono", Courier, monospace;
 }
 code {
   padding: 4px;
@@ -356,7 +356,26 @@ pre code {
 .highlight {
   border-radius: 0px 0px 18px 18px;
   padding-bottom: 5px;
+  overflow: auto;
   border-top: 1px solid var(--shadow-color-1);
+}
+.highlight:hover::-webkit-scrollbar-thumb {
+  border: 3px solid rgba(183,183,183,0.3);
+}
+.highlight::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  transition: all 0.2s ease;
+  display: block;
+}
+.highlight::-webkit-scrollbar-track {
+  background: transparent;
+  border: none;
+}
+.highlight::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  border: 3px solid rgba(183,183,183,0);
+  transition: all 0.2s ease;
 }
 .highlight pre {
   border: none;
