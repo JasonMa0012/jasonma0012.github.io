@@ -57,8 +57,8 @@
   background: var(--third-background-color);
   border-radius: $redefine-border-radius-large;
   box-shadow: var(--redefine-box-shadow-flat);
-  padding-top: 20px;
-  margin-top: 10px;
+  padding-top: 40px;
+  margin: 10px 0;
   position: relative;
 }
 .highlight-container[data-rel] figcaption {

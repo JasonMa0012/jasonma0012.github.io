@@ -346,6 +346,7 @@ code {
 }
 pre {
   padding: 10px;
+  tab-size: 4;
 }
 pre code {
   padding: 0;
@@ -357,6 +358,7 @@ pre code {
   border-radius: 0px 0px 18px 18px;
   padding-bottom: 5px;
   overflow: auto;
+  margin: 0 !important;
   border-top: 1px solid var(--shadow-color-1);
 }
 .highlight:hover::-webkit-scrollbar-thumb {
