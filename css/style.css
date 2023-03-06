@@ -1589,7 +1589,8 @@ pre .deletion {
   border-radius: 18px;
   box-shadow: var(--redefine-box-shadow-flat);
   padding-top: 40px;
-  margin: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 1rem;
   position: relative;
 }
 .highlight-container[data-rel] figcaption {
