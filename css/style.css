@@ -155,6 +155,7 @@
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -197,6 +198,7 @@
     --note-type-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
+    --first-screen-img: url("/images/background_image_light.jpg");
     --first-screen-text-color: #fff;
     --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
     --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -240,6 +242,7 @@
     --note-type-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
+    --first-screen-img: url("/images/background_image_dark.jpg");
     --first-screen-text-color: #d1d1b6;
     --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
     --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -282,6 +285,7 @@
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -323,6 +327,7 @@
   --note-type-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
+  --first-screen-img: url("/images/background_image_dark.jpg");
   --first-screen-text-color: #d1d1b6;
   --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
   --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -364,6 +369,7 @@
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -406,6 +412,7 @@
     --note-type-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
+    --first-screen-img: url("/images/background_image_light.jpg");
     --first-screen-text-color: #fff;
     --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
     --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -449,6 +456,7 @@
     --note-type-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
+    --first-screen-img: url("/images/background_image_dark.jpg");
     --first-screen-text-color: #d1d1b6;
     --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
     --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -491,6 +499,7 @@
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -532,6 +541,7 @@
   --note-type-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
+  --first-screen-img: url("/images/background_image_dark.jpg");
   --first-screen-text-color: #d1d1b6;
   --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
   --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -1038,6 +1048,7 @@ button {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -1080,6 +1091,7 @@ button {
     --note-type-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
+    --first-screen-img: url("/images/background_image_light.jpg");
     --first-screen-text-color: #fff;
     --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
     --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -1123,6 +1135,7 @@ button {
     --note-type-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
+    --first-screen-img: url("/images/background_image_dark.jpg");
     --first-screen-text-color: #d1d1b6;
     --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
     --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -1165,6 +1178,7 @@ button {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -1206,6 +1220,7 @@ button {
   --note-type-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
+  --first-screen-img: url("/images/background_image_dark.jpg");
   --first-screen-text-color: #d1d1b6;
   --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
   --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -1672,6 +1687,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -1714,6 +1730,7 @@ pre .deletion {
     --note-type-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
+    --first-screen-img: url("/images/background_image_light.jpg");
     --first-screen-text-color: #fff;
     --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
     --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -1757,6 +1774,7 @@ pre .deletion {
     --note-type-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
+    --first-screen-img: url("/images/background_image_dark.jpg");
     --first-screen-text-color: #d1d1b6;
     --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
     --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -1799,6 +1817,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -1840,6 +1859,7 @@ pre .deletion {
   --note-type-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
+  --first-screen-img: url("/images/background_image_dark.jpg");
   --first-screen-text-color: #d1d1b6;
   --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
   --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -1995,6 +2015,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -2037,6 +2058,7 @@ pre .deletion {
     --note-type-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
+    --first-screen-img: url("/images/background_image_light.jpg");
     --first-screen-text-color: #fff;
     --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
     --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -2080,6 +2102,7 @@ pre .deletion {
     --note-type-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
+    --first-screen-img: url("/images/background_image_dark.jpg");
     --first-screen-text-color: #d1d1b6;
     --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
     --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -2122,6 +2145,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -2163,6 +2187,7 @@ pre .deletion {
   --note-type-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
+  --first-screen-img: url("/images/background_image_dark.jpg");
   --first-screen-text-color: #d1d1b6;
   --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
   --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -2261,19 +2286,11 @@ pre .deletion {
 @media (max-width: 780px) {
   .page-container .page-main-content .page-main-content-middle {
     padding: 30.400000000000002px 0;
-    box-shadow: none !important;
-  }
-  .page-container .page-main-content .page-main-content-middle :hover {
-    box-shadow: none !important;
   }
 }
 @media (max-width: 500px) {
   .page-container .page-main-content .page-main-content-middle {
-    box-shadow: none !important;
     border: none !important;
-  }
-  .page-container .page-main-content .page-main-content-middle :hover {
-    box-shadow: none !important;
   }
 }
 .page-container .page-main-content .page-main-content-middle .main-content {
@@ -2384,6 +2401,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -2426,6 +2444,7 @@ pre .deletion {
     --note-type-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
+    --first-screen-img: url("/images/background_image_light.jpg");
     --first-screen-text-color: #fff;
     --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
     --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -2469,6 +2488,7 @@ pre .deletion {
     --note-type-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
+    --first-screen-img: url("/images/background_image_dark.jpg");
     --first-screen-text-color: #d1d1b6;
     --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
     --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -2511,6 +2531,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -2552,6 +2573,7 @@ pre .deletion {
   --note-type-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
+  --first-screen-img: url("/images/background_image_dark.jpg");
   --first-screen-text-color: #d1d1b6;
   --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
   --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -2929,6 +2951,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -2971,6 +2994,7 @@ pre .deletion {
     --note-type-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
+    --first-screen-img: url("/images/background_image_light.jpg");
     --first-screen-text-color: #fff;
     --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
     --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -3014,6 +3038,7 @@ pre .deletion {
     --note-type-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
+    --first-screen-img: url("/images/background_image_dark.jpg");
     --first-screen-text-color: #d1d1b6;
     --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
     --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -3056,6 +3081,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -3097,6 +3123,7 @@ pre .deletion {
   --note-type-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
+  --first-screen-img: url("/images/background_image_dark.jpg");
   --first-screen-text-color: #d1d1b6;
   --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
   --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -3625,6 +3652,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -3667,6 +3695,7 @@ pre .deletion {
     --note-type-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
+    --first-screen-img: url("/images/background_image_light.jpg");
     --first-screen-text-color: #fff;
     --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
     --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -3710,6 +3739,7 @@ pre .deletion {
     --note-type-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
+    --first-screen-img: url("/images/background_image_dark.jpg");
     --first-screen-text-color: #d1d1b6;
     --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
     --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -3752,6 +3782,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -3793,6 +3824,7 @@ pre .deletion {
   --note-type-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
+  --first-screen-img: url("/images/background_image_dark.jpg");
   --first-screen-text-color: #d1d1b6;
   --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
   --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -3897,6 +3929,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -3939,6 +3972,7 @@ pre .deletion {
     --note-type-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
+    --first-screen-img: url("/images/background_image_light.jpg");
     --first-screen-text-color: #fff;
     --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
     --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -3982,6 +4016,7 @@ pre .deletion {
     --note-type-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
+    --first-screen-img: url("/images/background_image_dark.jpg");
     --first-screen-text-color: #d1d1b6;
     --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
     --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -4024,6 +4059,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -4065,6 +4101,7 @@ pre .deletion {
   --note-type-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
+  --first-screen-img: url("/images/background_image_dark.jpg");
   --first-screen-text-color: #d1d1b6;
   --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
   --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -4369,6 +4406,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -4411,6 +4449,7 @@ pre .deletion {
     --note-type-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
+    --first-screen-img: url("/images/background_image_light.jpg");
     --first-screen-text-color: #fff;
     --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
     --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -4454,6 +4493,7 @@ pre .deletion {
     --note-type-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
+    --first-screen-img: url("/images/background_image_dark.jpg");
     --first-screen-text-color: #d1d1b6;
     --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
     --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -4496,6 +4536,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -4537,6 +4578,7 @@ pre .deletion {
   --note-type-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
+  --first-screen-img: url("/images/background_image_dark.jpg");
   --first-screen-text-color: #d1d1b6;
   --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
   --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -4582,6 +4624,9 @@ pre .deletion {
 @media (max-width: 500px) {
   .page-template-container {
     padding: 1.2rem 0.2rem;
+    box-shadow: none;
+  }
+  .page-template-container:hover {
     box-shadow: none;
   }
 }
@@ -4723,6 +4768,62 @@ pre .deletion {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.page-template-container .essays-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.page-template-container .essays-container .essays-title {
+  color: var(--second-text-color);
+  margin-top: -10px;
+}
+.page-template-container .essays-container .essays-title .article-title-regular {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: bold;
+  color: var(--second-text-color);
+  margin-top: 15px;
+}
+.page-template-container .essays-container .essays-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.page-template-container .essays-container .essays-list .essay-item {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+}
+.page-template-container .essays-container .essays-list .essay-item p {
+  margin: 0;
+}
+.page-template-container .essays-container .essays-list .essay-item .essay-avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+.page-template-container .essays-container .essays-list .essay-item .essay-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 9px;
+}
+.page-template-container .essays-container .essays-list .essay-item .essay-content {
+  color: var(--second-text-color);
+  margin-bottom: 0.5rem;
+  box-shadow: var(--redefine-box-shadow-flat);
+  padding: 0.8rem 1rem 0.5rem 1rem;
+  border-radius: 14px;
+}
+.page-template-container .essays-container .essays-list .essay-item .essay-content .content {
+  margin-bottom: 0.5rem;
+}
+.page-template-container .essays-container .essays-list .essay-item .essay-content .date {
+  border-top: 1px solid var(--third-background-color);
+  color: var(--third-text-color);
+  font-size: 0.8rem;
+}
 :root {
   --background-color: #fff;
   --background-color-transparent: rgba(255,255,255,0.6);
@@ -4755,6 +4856,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -4797,6 +4899,7 @@ pre .deletion {
     --note-type-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
+    --first-screen-img: url("/images/background_image_light.jpg");
     --first-screen-text-color: #fff;
     --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
     --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -4840,6 +4943,7 @@ pre .deletion {
     --note-type-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
+    --first-screen-img: url("/images/background_image_dark.jpg");
     --first-screen-text-color: #d1d1b6;
     --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
     --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -4882,6 +4986,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -4923,6 +5028,7 @@ pre .deletion {
   --note-type-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
+  --first-screen-img: url("/images/background_image_dark.jpg");
   --first-screen-text-color: #d1d1b6;
   --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
   --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -4939,19 +5045,9 @@ pre .deletion {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background: url("$first-screen-img") center center/cover no-repeat;
+  background: var(--first-screen-img) center center/cover no-repeat;
   background-size: cover;
   will-change: transform;
-}
-@media (max-width: 780px) {
-  .first-screen-container {
-    background-position-y: 63px;
-  }
-}
-@media (max-width: 500px) {
-  .first-screen-container {
-    background-position-y: 56px;
-  }
 }
 .first-screen-container .content {
   position: relative;
@@ -4996,22 +5092,6 @@ pre .deletion {
 }
 .first-screen-container .content .social-contacts .social-contact-item:last-child {
   margin-right: 0;
-}
-@media (prefers-color-scheme: light) {
-  .first-screen-container {
-    background: url("/images/background_image_light.jpg") center center/cover no-repeat !important;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .first-screen-container {
-    background: url("/images/background_image_dark.jpg") center center/cover no-repeat !important;
-  }
-}
-.light-mode .first-screen-container {
-  background: url("/images/background_image_light.jpg") center center/cover no-repeat !important;
-}
-.dark-mode .first-screen-container {
-  background: url("/images/background_image_dark.jpg") center center/cover no-repeat !important;
 }
 .image-viewer-container {
   position: fixed;
@@ -5135,6 +5215,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -5177,6 +5258,7 @@ pre .deletion {
     --note-type-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
+    --first-screen-img: url("/images/background_image_light.jpg");
     --first-screen-text-color: #fff;
     --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
     --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -5220,6 +5302,7 @@ pre .deletion {
     --note-type-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
+    --first-screen-img: url("/images/background_image_dark.jpg");
     --first-screen-text-color: #d1d1b6;
     --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
     --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -5262,6 +5345,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -5303,6 +5387,7 @@ pre .deletion {
   --note-type-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
+  --first-screen-img: url("/images/background_image_dark.jpg");
   --first-screen-text-color: #d1d1b6;
   --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
   --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -5450,6 +5535,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -5492,6 +5578,7 @@ pre .deletion {
     --note-type-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
+    --first-screen-img: url("/images/background_image_light.jpg");
     --first-screen-text-color: #fff;
     --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
     --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -5535,6 +5622,7 @@ pre .deletion {
     --note-type-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
+    --first-screen-img: url("/images/background_image_dark.jpg");
     --first-screen-text-color: #d1d1b6;
     --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
     --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -5577,6 +5665,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -5618,6 +5707,7 @@ pre .deletion {
   --note-type-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
+  --first-screen-img: url("/images/background_image_dark.jpg");
   --first-screen-text-color: #d1d1b6;
   --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
   --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -5855,6 +5945,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -5897,6 +5988,7 @@ pre .deletion {
     --note-type-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
+    --first-screen-img: url("/images/background_image_light.jpg");
     --first-screen-text-color: #fff;
     --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
     --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -5940,6 +6032,7 @@ pre .deletion {
     --note-type-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
+    --first-screen-img: url("/images/background_image_dark.jpg");
     --first-screen-text-color: #d1d1b6;
     --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
     --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -5982,6 +6075,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -6023,6 +6117,7 @@ pre .deletion {
   --note-type-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
+  --first-screen-img: url("/images/background_image_dark.jpg");
   --first-screen-text-color: #d1d1b6;
   --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
   --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -6119,7 +6214,7 @@ pre .deletion {
 @media (max-width: 500px) {
   .post-page-container .article-content-container {
     padding: 1.2rem 0.2rem;
-    box-shadow: none;
+    box-shadow: none !important;
   }
 }
 .post-page-container .article-content-container .article-title {
@@ -6540,6 +6635,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -6582,6 +6678,7 @@ pre .deletion {
     --note-type-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
+    --first-screen-img: url("/images/background_image_light.jpg");
     --first-screen-text-color: #fff;
     --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
     --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -6625,6 +6722,7 @@ pre .deletion {
     --note-type-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
+    --first-screen-img: url("/images/background_image_dark.jpg");
     --first-screen-text-color: #d1d1b6;
     --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
     --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -6667,6 +6765,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -6708,6 +6807,7 @@ pre .deletion {
   --note-type-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
+  --first-screen-img: url("/images/background_image_dark.jpg");
   --first-screen-text-color: #d1d1b6;
   --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
   --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -6803,6 +6903,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -6845,6 +6946,7 @@ pre .deletion {
     --note-type-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
+    --first-screen-img: url("/images/background_image_light.jpg");
     --first-screen-text-color: #fff;
     --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
     --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -6888,6 +6990,7 @@ pre .deletion {
     --note-type-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
+    --first-screen-img: url("/images/background_image_dark.jpg");
     --first-screen-text-color: #d1d1b6;
     --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
     --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -6930,6 +7033,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -6971,6 +7075,7 @@ pre .deletion {
   --note-type-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
+  --first-screen-img: url("/images/background_image_dark.jpg");
   --first-screen-text-color: #d1d1b6;
   --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
   --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -7111,6 +7216,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -7153,6 +7259,7 @@ pre .deletion {
     --note-type-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
+    --first-screen-img: url("/images/background_image_light.jpg");
     --first-screen-text-color: #fff;
     --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
     --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -7196,6 +7303,7 @@ pre .deletion {
     --note-type-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
+    --first-screen-img: url("/images/background_image_dark.jpg");
     --first-screen-text-color: #d1d1b6;
     --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
     --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -7238,6 +7346,7 @@ pre .deletion {
   --note-type-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
+  --first-screen-img: url("/images/background_image_light.jpg");
   --first-screen-text-color: #fff;
   --first-screen-icons-container-border-color: rgba(255,255,255,0.35);
   --first-screen-icons-container-background-color: rgba(255,255,255,0.3);
@@ -7279,6 +7388,7 @@ pre .deletion {
   --note-type-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
+  --first-screen-img: url("/images/background_image_dark.jpg");
   --first-screen-text-color: #d1d1b6;
   --first-screen-icons-container-border-color: rgba(197,197,197,0.35);
   --first-screen-icons-container-background-color: rgba(197,197,197,0.3);
@@ -8512,7 +8622,6 @@ a.button:hover {
   background-color: var(--third-background-color) !important;
 }
 a.button:active {
-  box-shadow: none;
   transform: translateY(3px);
   transition: transform 0.1s ease;
 }
@@ -8529,9 +8638,7 @@ div.tabs {
   position: relative;
   margin-top: 16px;
   margin-bottom: 16px;
-  border-radius: 14px;
   background: var(--color-card);
-  box-shadow: var(--redefine-box-shadow-flat);
 }
 div.tabs .highlight,
 div.tabs p,
@@ -8543,32 +8650,37 @@ div.tabs details {
   margin-bottom: 16px;
 }
 div.tabs ul.nav-tabs {
-  display: flex;
+  display: table;
+  position: relative;
   overflow-x: auto;
-  white-space: nowrap;
-  justify-content: flex-start;
   margin: 0 !important;
-  padding: 8px;
+  padding: 4px;
   background: var(--third-background-color);
-  border-radius: 14px 14px 0 0;
+  border-radius: 14px;
   line-height: 1.5;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
 }
 div.tabs ul.nav-tabs li.tab {
   list-style-type: none;
+  display: inline-block;
+  float: none;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 10px;
 }
 div.tabs ul.nav-tabs li.tab:first-child {
   margin-left: 0px;
 }
 div.tabs ul.nav-tabs li.tab:last-child {
-  padding-right: 12px;
+  padding-right: 0px;
 }
 div.tabs ul.nav-tabs li.tab a {
   display: block;
   cursor: pointer;
   border-radius: 9px;
-  padding: 8px;
+  padding: 4px 8px;
   text-align: center;
   font-size: $fontsize-meta;
   line-height: inherit;
@@ -8588,14 +8700,13 @@ div.tabs ul.nav-tabs li.tab.active a {
   color: var(--primary-color);
   background-color: var(--second-background-color);
   box-shadow: var(--redefine-box-shadow-flat);
-  transform: translateY(-1px);
   transition: transform 0.1s ease;
 }
 div.tabs .tab-content {
-  border-top: 1px solid var(--shadow-color-1);
   background-color: var(--second-background-color);
-  border-radius: 0 0 14px 14px;
-  margin-top: -1px;
+  border-radius: 14px;
+  box-shadow: var(--redefine-box-shadow-flat);
+  margin-top: 1rem;
 }
 div.tabs .tab-content .highlight-container[data-rel] {
   border-radius: 9px;
