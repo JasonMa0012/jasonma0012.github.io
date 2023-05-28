@@ -1,0 +1,1 @@
+npx hexo server -g -p 3999
