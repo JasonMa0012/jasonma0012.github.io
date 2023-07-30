@@ -21,18 +21,18 @@ info:
 # IMAGE CONFIGURATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 defaults:
   # Favicon
-  favicon: /images/redefine-favicon.svg
+  favicon: https://avatars.githubusercontent.com/u/39983625?s=400&u=ffcfcd6785cfb619c97ae295a9a6b3749500e1e5&v=4
   # Site logo
   logo: 
   # Site avatar
-  avatar: /images/redefine-avatar.svg
+  avatar: https://avatars.githubusercontent.com/u/39983625?s=400&u=ffcfcd6785cfb619c97ae295a9a6b3749500e1e5&v=4
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
 # COLORS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 colors:
   #Primary color
-  primary: "#A31F34"
+  primary: "#32d1bc"
   # Secondary color (beta)
   secondary: 
 # COLORS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
@@ -145,9 +145,10 @@ home_banner:
     # Social links
     links:
       github: https://github.com/JasonMa0012 # your GitHub URL
-      # instagram: # your Instagram URL
-      zhihu: https://www.zhihu.com/people/blackcat1312 # your ZhiHu URL
       twitter: https://twitter.com/JasonMa0012 # your twitter URL
+      youtube: https://www.youtube.com/channel/UC-xBhVH-VDcKcQZVDVkFuVg
+      # instagram: # your Instagram URL
+      bilibili: https://space.bilibili.com/42463206
       email: jasonma0012@foxmail.com # your email
       # ...... # you can add more
 # HOME BANNER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
@@ -156,41 +157,48 @@ home_banner:
 # NAVIGATION BAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 navbar:
   # Auto hide navbar
-  auto_hide: false
+  auto_hide: true
   # Navbar background color
   color:
-    left: "#f78736" #left side 
-    right: "#367df7"  #right side
+    left: "#00c174" #left side 
+    right: "#009fcf"  #right side
     transparency: 35 #percent (10-99)
   # Navbar links
   links:
     Home: 
       path: / 
       icon: fa-regular fa-house # can be empty
-    # Archives: 
-    #   path: /archives 
-    #   icon: fa-regular fa-archive # can be empty
-    # Status: 
+    Gallery: 
+      path: /masonry
+      icon: fa-regular fa-image # can be empty
+    Archives: 
+      path: /archives
+      icon: fa-regular fa-archive # can be empty
+    # Status: Status
     #   path: https://status.evanluo.top/
     #   icon: fa-regular fa-chart-bar
-    # About: 
-    #   icon: fa-regular fa-user
-    #   submenus:
-    #     Me: /about
-    #     Github: https://github.com/EvanNotFound/hexo-theme-redefine
-    #     Blog: https://ohevan.com
-    #     Friends: /friends
-    # Links: 
-    #   icon: fa-regular fa-link
-    #   submenus:
-    #     Link1: /link1
-    #     Link2: /link2
-    #     Link3: /link3
+    About: 
+      path: /2023/07/31/我是谁？
+      icon: fa-regular fa-user
+      # submenus:
+      #   Me: /about
+      #   Github: https://github.com/JasonMa0012
+      #   Blog: https://ohevan.com
+      #   Friends: /friends
+    Links: 
+      icon: fa-regular fa-link
+      submenus:
+        github: https://github.com/JasonMa0012 # your GitHub URL
+        twitter: https://twitter.com/JasonMa0012 # your twitter URL
+        youtube: https://www.youtube.com/channel/UC-xBhVH-VDcKcQZVDVkFuVg
+        bilibili: https://space.bilibili.com/42463206
+        zhihu: https://www.zhihu.com/people/blackcat1312
+        email: jasonma0012@foxmail.com # your email
     # ...... # you can add more
   # Navbar search (local search). Requires hexo-generator-searchdb (npm i hexo-generator-searchdb). See https://github.com/theme-next/hexo-generator-searchdb
   search:
     # Whether to enable
-    enable: false
+    enable: true
     # Preload search data when the page loads
     preload: true
 # NAVIGATION BAR <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
@@ -245,7 +253,7 @@ articles:
     min2read: true # Whether to display reading time
   # Author label
   author_label: 
-    enable: true # Whether to enable
+    enable: false # Whether to enable
     auto: false # Whether to automatically add author label, e.g. Lv1, Lv2, Lv3...
     list: []
   # Code block settings
@@ -259,7 +267,7 @@ articles:
   # Table of contents settings
   toc:
     enable: true # Whether to enable TOC
-    max_depth: 3 # TOC depth
+    max_depth: 6 # TOC depth
     number: false # Whether to add number to TOC automatically
     expand: true # Whether to expand TOC
     init_open: true # Open toc by default
@@ -311,7 +319,7 @@ comment:
 # FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 footer:
   # Show website running time
-  runtime: true # show website running time or not
+  runtime: false # show website running time or not
   # Icon in footer, write fontawesome icon code here
   icon: '<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>'
   # The start time of the website, format: YYYY/MM/DD HH:mm:ss
@@ -345,16 +353,17 @@ inject:
 plugins:
   # RSS feed. Requires hexo-generator-feed (npm i hexo-generator-feed). See https://github.com/hexojs/hexo-generator-feed
   feed:
-    enable: false # Whether to enable
+    enable: true # Whether to enable
   # Aplayer. See https://github.com/DIYgod/APlayer
   aplayer:
-    enable: false # Whether to enable
+    enable: true # Whether to enable
     type: fixed # fixed, mini
     audios:
-      - name: # audio name
-        artist: # audio artist
-        url: # audio url
-        cover: # audio cover url
+      - name: A Rainy Morning ~Main Title~
+        artist: 柏大輔
+        url: /audios/柏大輔 - A Rainy Morning ~Main Title~.flac
+        # url: https://m701.music.126.net/20230716221029/888c9b530180bc513c4a5651a036d2ea/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/24473880920/34af/a79f/e2d5/d4955794b2be6a2b306aa758d4116b58.mp3
+        cover: /audios/柏大輔 - A Rainy Morning ~Main Title~.jpg
       # - name: # audio name
       #   artist: # audio artist
       #   url: # audio url

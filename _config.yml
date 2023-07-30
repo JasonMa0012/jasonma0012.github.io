@@ -5,10 +5,10 @@
 # Site
 title: Elysium
 subtitle: ''
-description: ''
+description: "Jason Ma's Blog"
 keywords:
 author: Jason Ma
-language: zh-CN
+language: en
 timezone: ''
 
 # URL
@@ -103,3 +103,14 @@ theme: redefine
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+
+# Plugins
+# Generate categories from directory-tree
+# Dependencies: https://github.com/xu-song/hexo-auto-category
+# depth: the max_depth of directory-tree you want to generate, should > 0
+# multiple: multiple category hierarchies
+auto_category:
+ enable: true
+ multiple: false
+ depth: 

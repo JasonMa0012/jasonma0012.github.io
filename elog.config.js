@@ -6,7 +6,7 @@ module.exports = {
       baseUrl: '',
       login: process.env.YUQUE_LOGIN,
       repo: process.env.YUQUE_REPO,
-      onlyPublic: true,
+      onlyPublic: false,
       onlyPublished: true,
     },
     notion: {
@@ -14,17 +14,17 @@ module.exports = {
       databaseId: process.env.NOTION_DATABASE_ID,
       filter: true, // {property: 'status', select: {equals: '已发布'}}
       sorts: true, // [{timestamp: 'created_time', direction: 'descending'}],
-      catalog: false
+      catalog: true
     },
   },
   deploy: {
     platform: 'local',
     local: {
-      outputDir: 'source/_posts/yuque',
-      filename: '',
+      outputDir: 'source/_posts',
+      filename: 'title',
       format: 'matter-markdown',
       catalog: true,
-      formatExt: '',
+      formatExt: '',//'elog.formatExt.js',
     },
     confluence: {
       user: process.env.CONFLUENCE_USER,
@@ -39,8 +39,8 @@ module.exports = {
     enable: true,
     platform: 'local',
     local: {
-      outputDir: 'source/images/yuque',
-      prefixKey: '/images/yuque',
+      outputDir: './source/images/yuqueAssets',
+      prefixKey: '/images/yuqueAssets',
     },
     oss: {
       secretId: process.env.OSS_SECRET_ID,

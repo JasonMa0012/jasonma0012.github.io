@@ -1,0 +1,1 @@
+elog sync -e .elog.env
