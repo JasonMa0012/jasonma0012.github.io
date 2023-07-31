@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "serve": "vitepress serve docs",
     "elog:init": "elog init",
     "sync:local": "elog sync -e .elog.env",
     "sync:": "elog sync",
-    "clean": "elog clean"
+    "clean": "elog clean",
+    "build": "hexo generate",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
   },
   "hexo": {
     "version": "6.3.0"
