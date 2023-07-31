@@ -1,4 +1,4 @@
-name: Deplo To Github Pages
+name: Deploy To Github Pages
 
 on:
   # 允许手动push触发
