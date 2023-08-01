@@ -178,7 +178,7 @@ navbar:
     #   path: https://status.evanluo.top/
     #   icon: fa-regular fa-chart-bar
     About: 
-      path: /2023/07/31/我是谁？
+      path: /2023/07/30/我是谁？
       icon: fa-regular fa-user
       # submenus:
       #   Me: /about
