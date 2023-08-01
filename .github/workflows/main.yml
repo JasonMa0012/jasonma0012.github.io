@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 检查分支
+      - name: checkout
         uses: actions/checkout@v2
 
       - name: 安装node环境
