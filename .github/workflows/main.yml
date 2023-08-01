@@ -19,7 +19,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
-      - name: 安装node环境
+      - name: Install Node
         uses: actions/setup-node@v2
         with:
           node-version: "18.15.0"
@@ -32,15 +32,8 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-npm-cache
             
-      - name: 安装pnpm
-        run: |
-          export TZ='Asia/Shanghai'
-          npm install pnpm@7.9.5 -g
-
-      - name: 安装依赖
-        run: |
-          export TZ='Asia/Shanghai'
-          pnpm install --prod
+      - name: Install Dependencies
+        run: npm install
 
       - name: 拉取语雀/Notion的文章
         env:
@@ -49,8 +42,7 @@ jobs:
           YUQUE_LOGIN: ${{ secrets.YUQUE_LOGIN }}
           YUQUE_REPO: ${{ secrets.YUQUE_REPO }}
           # 对应package.json中的script.sync
-        run: |
-          pnpm sync          
+        run: npm run sync          
 
       - name: 配置Git用户名邮箱
         run: |
@@ -70,8 +62,7 @@ jobs:
 
       - name: 生成静态文件
         # 对应package.json中的script.build
-        run: |
-          pnpm build
+        run: npm run build
 
       - name: 部署到Github Pages
         uses: peaceiris/actions-gh-pages@v3
