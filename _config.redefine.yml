@@ -188,9 +188,9 @@ navbar:
     Links: 
       icon: fa-regular fa-link
       submenus:
-        github: https://github.com/JasonMa0012 # your GitHub URL
-        twitter: https://twitter.com/JasonMa0012 # your twitter URL
-        youtube: https://www.youtube.com/channel/UC-xBhVH-VDcKcQZVDVkFuVg
+        github: https://github.com/JasonMa0012
+        twitter: https://twitter.com/JasonMa0012
+        youtube: https://www.youtube.com/@jasonma0012
         bilibili: https://space.bilibili.com/42463206
         zhihu: https://www.zhihu.com/people/blackcat1312
         email: jasonma0012@foxmail.com # your email
