@@ -5,7 +5,7 @@
   "scripts": {
     "elog:init": "elog init",
     "sync:local": "elog sync -e .elog.env",
-    "sync:": "elog sync",
+    "sync": "elog sync",
     "clean": "elog clean",
     "build": "hexo generate",
     "deploy": "hexo deploy",
