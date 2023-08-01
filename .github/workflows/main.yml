@@ -8,7 +8,8 @@ on:
   # 允许外部仓库事件触发
   repository_dispatch:
     types:
-      - deploy # api中的event_type就是这个
+      # api中的event_type就是这个
+      - deploy
 
 jobs:
   build:
@@ -47,8 +48,9 @@ jobs:
           YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
           YUQUE_LOGIN: ${{ secrets.YUQUE_LOGIN }}
           YUQUE_REPO: ${{ secrets.YUQUE_REPO }}
+          # 对应package.json中的script.sync
         run: |
-          pnpm sync # 对应package.json中的script.sync
+          pnpm sync          
 
       - name: 配置Git用户名邮箱
         run: |
@@ -67,8 +69,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 生成静态文件
+        # 对应package.json中的script.build
         run: |
-          pnpm build # 对应package.json中的script.build
+          pnpm build
 
       - name: 部署到Github Pages
         uses: peaceiris/actions-gh-pages@v3
