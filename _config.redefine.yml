@@ -295,7 +295,7 @@ comment:
   # Whether to enable comment
   enable: true
   # Comment system
-  system: waline # waline, gitalk, twikoo
+  system: giscus # waline, gitalk, twikoo
   # System configuration
   config:
     # Waline comment system. See https://waline.js.org/
@@ -313,6 +313,18 @@ comment:
       version: 1.6.10 # Twikoo version, do not modify if you dont know what it is
       server_url: # Twikoo server URL. e.g. https://example.example.com
       region: # Twikoo region. can be empty
+    giscus:
+      repo: JasonMa0012/jasonma0012.github.io # Github repository name
+      repo_id: R_kgDOI6HkvA # Github repository id
+      category: Announcements # Github discussion category
+      category_id: DIC_kwDOI6HkvM4CXJ4m # Github discussion category id
+      mapping: pathname
+      strict: 0
+      reactions_enabled: 1
+      emit_metadata: 0
+      lang: zh-CN
+      input_position: top
+      loading: not-lazy
 # COMMENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
