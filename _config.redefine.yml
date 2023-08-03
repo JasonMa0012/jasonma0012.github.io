@@ -325,6 +325,7 @@ comment:
       lang: zh-CN
       input_position: top
       loading: not-lazy
+      theme: dark_dimmed
 # COMMENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
