@@ -3,12 +3,9 @@ tags:
   - Shader
 title: Unity Shader矩阵
 urlname: anpupr
+date: "2021-01-22 04:07:34"
+updated: "2023-08-25 03:58:06"
 author: Jason Ma
-date: '2021-01-22 12:07:34'
-updated: '2023-07-16 22:55:53'
-categories:
-  - TA
-  - Unity
 ---
 
 [Per-Component 数学运算 - Win32 apps](https://learn.microsoft.com/zh-cn/windows/win32/direct3dhlsl/dx-graphics-hlsl-per-component-math#matrix-ordering)
