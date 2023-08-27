@@ -2,7 +2,7 @@
 title: Outer Wilds & Undertale
 urlname: rz0zsolsdpdeznks
 date: "2023-08-27 12:28:00"
-updated: "2023-08-27 12:29:43"
+updated: "2023-08-27 12:45:51"
 author: Jason Ma
 ---
 
@@ -21,3 +21,4 @@ author: Jason Ma
 
 - 初见之时给人感觉平平无奇，甚至有点粗制滥造，而玩的越久越觉得深不可测。
 - 给予玩家的主观能动性充分的尊重，因此无需华丽的辞藻、电影级画面、巨大的开发投入，却依旧能带给玩家强大的能量。
+- 像在玩类魂游戏
