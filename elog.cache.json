@@ -441,13 +441,13 @@
       "id": 30545536,
       "doc_id": "anpupr",
       "title": "anpupr",
-      "updated": 1692935886000,
+      "updated": 1693144674000,
       "body_original": "---<br />tags:\n\n- Shader\n\n---<br />[Per-Component数学运算 - Win32 apps](https://learn.microsoft.com/zh-cn/windows/win32/direct3dhlsl/dx-graphics-hlsl-per-component-math#matrix-ordering)\n<a name=\"RRMqw\"></a>\n# 构造矩阵\n按行填充分量\n```python\n\nfloat2x2 fMatrix = { 0.0f, 0.1, // row 1\n                     2.1f, 2.2f // row 2\n                   };   \n\nfloat3 row0 = float3(1, 0, 0);\nfloat3 row1 = float3(0, 1, 0);\nfloat3 row2 = float3(0, 0, 1);\n\nfloat3x3 matrix = float3x3(row0, row1, row2);\n```\n<a name=\"kmeNn\"></a>\n# 访问矩阵元素\n可以使用数组访问表示法（一组从零开始的索引）访问矩阵。 每个索引都位于方括号内。 使用以下索引访问 4x4 矩阵：\n\n- [0][0], [0][1], [0][2], [0][3]\n- [1][0], [1][1], [1][2], [1][3]\n- [2][0], [2][1], [2][2], [2][3]\n- [3][0], [3][1], [3][2], [3][3]\n\n所以使用单个方括号时为按行访问\n```\nfloat2x2 fMatrix = { 1.0f, 1.1f, // row 1\n                     2.0f, 2.1f  // row 2\n                   };\nfloat temp;\n\ntemp = fMatrix[0][0] // single component read\ntemp = fMatrix[0][1] // single component read\nfMatrix[0] // row 1\nfMatrix[1] // row 2\n```\n还可以使用_mXX访问任意位置:<br />_m00、_m01、_m02、_m03<br />_m10、_m11、_m12、_m13<br />_m20、_m21、_m22、_m23<br />_m30、_m31、_m32、_m33\n```\n// given\nfloat2x2 fMatrix = { 1.0f, 1.1f, // row 1\n                     2.0f, 2.1f  // row 2\n                   }; \n\nfloat f_1D;\nf_1D = matrix._m00; // read the value in row 1, column 1: 1.0\nf_1D = matrix._m11; // read the value in row 2, column 2: 2.1\n\nf_1D = matrix._11;  // read the value in row 1, column 1: 1.0\nf_1D = matrix._22;  // read the value in row 2, column 2: 2.1\n```\n<a name=\"kOcvD\"></a>\n# unity_ObjectToWorld / UNITY_MATRIX_M\n\n- 第1行、第2行、第3行 = Object Rotation的xyz axis，length = 其xyz缩放，normalize = xyz hat\n- unity_ObjectToWorld._m03_m13_m23 = Object Center World Pos\n\n\n<a name=\"GEh0U\"></a>\n# UNITY_MATRIX_V\ncamera right = V[0].xyz<br />camera up= V[1].xyz<br />camera forward = -V[2].xyz\n\n\n<a name=\"TUiXj\"></a>\n# UNITY_MATRIX_P\n![](https://cdn.nlark.com/yuque/0/2021/png/504873/1614098323531-65af77f3-2658-4859-9104-dfc9db3b8a44.png#averageHue=%23fcfbfa&height=174&id=yo0qp&originHeight=174&originWidth=338&originalType=binary&ratio=1&rotation=0&showTitle=false&size=0&status=done&style=none&title=&width=338)![](https://cdn.nlark.com/yuque/0/2021/png/504873/1614098431195-5bad3cfc-8971-4d0c-a484-209ce33f5365.png#averageHue=%23fbfbfa&height=171&id=sVFTt&originHeight=171&originWidth=354&originalType=binary&ratio=1&rotation=0&showTitle=false&size=0&status=done&style=none&title=&width=354)\n",
       "properties": {
         "title": "Unity Shader矩阵",
         "urlname": "anpupr",
         "date": "2021-01-22 04:07:34",
-        "updated": "2023-08-25 03:58:06",
+        "updated": "2023-08-27 13:57:54",
         "author": "Jason Ma"
       },
       "catalog": [
@@ -555,13 +555,13 @@
       "id": 137491767,
       "doc_id": "rz0zsolsdpdeznks",
       "title": "rz0zsolsdpdeznks",
-      "updated": 1693140351000,
-      "body_original": "最近通关的两个饱受赞誉的游戏：星际拓荒 （Outer Wilds）、传说之下（Undertale）\n\n![ce18f21dde3cf8b45919e0c358fba086.png](https://cdn.nlark.com/yuque/0/2023/png/504873/1693139355937-4c505ab6-8b5c-45d5-abf5-22bae543afc6.png#averageHue=%2354543b&clientId=u15707535-f97d-4&from=drop&id=u6efe1fcc&originHeight=1350&originWidth=2400&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=2461789&status=done&style=none&taskId=u192e4f2a-d2cf-4e3a-aa7f-e80b984f638&title=)\n\n星际拓荒的确是最好的科幻和探索类型的游戏，其完全以玩家自身好奇心驱动的探索玩法，结合小、精致、动态、内在一致的宇宙，将宏大的宇宙观与崇高的探索精神充分传递给了每个坚持到通关的玩家，使我大受震撼。\n\n![6896d2ed45a60230fdf235811b07bec5.png](https://cdn.nlark.com/yuque/0/2023/png/504873/1693139363145-59eba2ee-a2fb-4047-a2e3-8907fc5c1c8d.png#averageHue=%23464646&clientId=u15707535-f97d-4&from=drop&id=u6cef9f16&originHeight=800&originWidth=1600&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=52538&status=done&style=none&taskId=u484b3ae0-5748-4f33-a32d-680165e0bc1&title=)\n\n传说之下的亮点在于打破了玩家对于传统游戏设计模式的认知以及第四面墙，将玩家从游戏中抽离，使玩家从一个更加现实和理性的视角反思自身的行为。<br />其实这类Meta游戏早有耳闻，但直到自己玩过之后才深刻体会到了传统媒体的说教式表达对人的漠视，也感叹于布莱希特式表达所激发出的人的主观能动性。\n\n它们还有几个共同点：\n\n- 初见之时给人感觉平平无奇，甚至有点粗制滥造，而玩的越久越觉得深不可测。\n- 给予玩家的主观能动性充分的尊重，因此无需华丽的辞藻、电影级画面、巨大的开发投入，却依旧能带给玩家强大的能量。\n- 像在玩类魂游戏\n\n\n",
+      "updated": 1693159951000,
+      "body_original": "最近通关的两个饱受赞誉的游戏：星际拓荒 （Outer Wilds）、传说之下（Undertale）\n\n![ce18f21dde3cf8b45919e0c358fba086.png](https://cdn.nlark.com/yuque/0/2023/png/504873/1693139355937-4c505ab6-8b5c-45d5-abf5-22bae543afc6.png#averageHue=%2354543b&clientId=u15707535-f97d-4&from=drop&id=u6efe1fcc&originHeight=1350&originWidth=2400&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=2461789&status=done&style=none&taskId=u192e4f2a-d2cf-4e3a-aa7f-e80b984f638&title=)\n\n星际拓荒的确是最好的科幻和探索类型的游戏，其完全以玩家自身好奇心驱动的探索玩法，结合小、精致、动态、内在一致的宇宙，将宏大的宇宙观与崇高的探索精神充分传递给了每个坚持到通关的玩家，使我大受震撼。<br />传统的谜题设计中的钥匙可能是一件装备、一个技能、一个道具，对于星际拓荒来说，这个钥匙是玩家脑中的知识。在一次次死亡循环中，游戏世界是相同的，不同的只是玩家的成长。\n\n![6896d2ed45a60230fdf235811b07bec5.png](https://cdn.nlark.com/yuque/0/2023/png/504873/1693139363145-59eba2ee-a2fb-4047-a2e3-8907fc5c1c8d.png#averageHue=%23464646&clientId=u15707535-f97d-4&from=drop&id=u6cef9f16&originHeight=800&originWidth=1600&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=52538&status=done&style=none&taskId=u484b3ae0-5748-4f33-a32d-680165e0bc1&title=)\n\n传说之下的亮点在于打破了玩家对于传统游戏设计模式的认知以及第四面墙，将玩家从游戏中抽离，使玩家从一个更加现实和理性的视角反思自身的行为。<br />其实这类Meta游戏早有耳闻，但直到自己玩过之后才深刻体会到了传统媒体的说教式表达对人的漠视，也感叹于布莱希特式表达所激发出的人的主观能动性。\n\n它们还有几个共同点：\n\n- 初见之时给人感觉平平无奇，甚至有点粗制滥造，而玩的越久越觉得深不可测。\n- 给予玩家的主观能动性充分的尊重，因此无需华丽的辞藻、电影级画面、巨大的开发投入，却依旧能带给玩家强大的能量。\n- 像在玩类魂游戏\n\n\n",
       "properties": {
         "title": "Outer Wilds & Undertale",
         "urlname": "rz0zsolsdpdeznks",
         "date": "2023-08-27 12:28:00",
-        "updated": "2023-08-27 12:45:51",
+        "updated": "2023-08-27 18:12:31",
         "author": "Jason Ma"
       },
       "catalog": [

@@ -2,7 +2,7 @@
 title: Outer Wilds & Undertale
 urlname: rz0zsolsdpdeznks
 date: "2023-08-27 12:28:00"
-updated: "2023-08-27 12:45:51"
+updated: "2023-08-27 18:12:31"
 author: Jason Ma
 ---
 
@@ -11,6 +11,7 @@ author: Jason Ma
 ![ce18f21dde3cf8b45919e0c358fba086.png](/images/yuqueAssets/FoKq9LhW1sO8UH6cwSEHCb1zgtbI.png)
 
 星际拓荒的确是最好的科幻和探索类型的游戏，其完全以玩家自身好奇心驱动的探索玩法，结合小、精致、动态、内在一致的宇宙，将宏大的宇宙观与崇高的探索精神充分传递给了每个坚持到通关的玩家，使我大受震撼。
+传统的谜题设计中的钥匙可能是一件装备、一个技能、一个道具，对于星际拓荒来说，这个钥匙是玩家脑中的知识。在一次次死亡循环中，游戏世界是相同的，不同的只是玩家的成长。
 
 ![6896d2ed45a60230fdf235811b07bec5.png](/images/yuqueAssets/FrDpurPosyOqu-MICZsI7mU8SRM7.png)
 
