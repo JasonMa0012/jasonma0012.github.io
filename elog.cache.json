@@ -47,14 +47,14 @@
       "id": 132145639,
       "doc_id": "fsmrgf7ce2gotyvn",
       "title": "fsmrgf7ce2gotyvn",
-      "updated": 1689505310000,
-      "body_original": "---<br />tags:\n\n- DCC\n\n---\n<a name=\"swhgk\"></a>\n## 材质 / 贴图 不更新\nHoudini做材质经常遇到Viewport中材质不更新的问题, 是因为Viewport的渲染器使用的是OpenGL, 是不会调用材质VOP的:<br />[https://www.sidefx.com/docs/houdini/shade/glsl.html](https://www.sidefx.com/docs/houdini/shade/glsl.html)<br />[https://www.sidefx.com/docs/houdini/shade/opengl.html](https://www.sidefx.com/docs/houdini/shade/opengl.html)<br />一些内置的Shader可以在Viewport中显示是因为已经绑定好了OpenGL属性.\n\n但偶尔仍会遇到内置的Shader不更新的情况, 可以尝试:\n\n- 切换光照模式\n- 切换材质显示\n- 调整材质参数\n- Ctrl + S\n\n比较极端的情况下可能要使用Python节点触发材质参数修改:\n```python\nimport hou\n\ndef change_all_materials_color(new_color=(1, 0, 0)):\n\n    # 寻找所有的材质节点\n    # tooncolorshader替换为你的Shader VOP名称\n    material_nodes = hou.nodeType(hou.vopNodeTypeCategory(), \"tooncolorshader\").instances()\n\n    # 遍历所有材质节点\n    for node in material_nodes:\n        # Cdbias替换为Shader中某个不重要的参数的名称\n        for parm in node.parmTuple(\"Cdbias\"):\n            # print(parm)\n            parm.set(1)\n            parm.set(0)\n\nchange_all_materials_color()\nprint(111)\n```\n这些代码会查找指定类型的ShaderVOP实例, 并修改其中参数从而触发材质更新.<br />打开文件后点击此Python节点即可运行代码.\n\n\n",
+      "updated": 1694422460000,
+      "body_original": "---<br />tags:\n\n- DCC\n\n---\n<a name=\"swhgk\"></a>\n## 材质 / 贴图 不更新\nHoudini做材质经常遇到Viewport中材质不更新的问题, 是因为Viewport的渲染器使用的是OpenGL, 是不会调用材质VOP的:<br />[https://www.sidefx.com/docs/houdini/shade/glsl.html](https://www.sidefx.com/docs/houdini/shade/glsl.html)<br />[https://www.sidefx.com/docs/houdini/shade/opengl.html](https://www.sidefx.com/docs/houdini/shade/opengl.html)<br />一些内置的Shader可以在Viewport中显示是因为已经绑定好了OpenGL属性.\n\n但偶尔仍会遇到内置的Shader不更新的情况, 可以尝试:\n\n- 切换光照模式\n- 切换材质显示\n- 调整材质参数\n- Ctrl + S\n\n比较极端的情况下可能要使用Python节点触发材质参数修改:\n```python\nimport hou\n\ndef change_all_materials_color(new_color=(1, 0, 0)):\n\n    # 寻找所有的材质节点\n    # tooncolorshader替换为你的Shader VOP名称\n    material_nodes = hou.nodeType(hou.vopNodeTypeCategory(), \"tooncolorshader\").instances()\n\n    # 遍历所有材质节点\n    for node in material_nodes:\n        # Cdbias替换为Shader中某个不重要的参数的名称\n        for parm in node.parmTuple(\"Cdbias\"):\n            # print(parm)\n            parm.set(1)\n            parm.set(0)\n\nchange_all_materials_color()\nprint(111)\n```\n这些代码会查找指定类型的ShaderVOP实例, 并修改其中参数从而触发材质更新.<br />打开文件后点击此Python节点即可运行代码.\n\n<a name=\"A5Vcn\"></a>\n## Maya HDA 无法修改法线\nHoudini 18.0, Maya 2018<br />问题: Maya内通过Houdini Engine加载的HDA无法修改模型法线<br />原因: Maya模型法线必须锁定法线后才能修改<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/504873/1694422328883-f78ac88e-14a4-4d19-a84f-03b299db2460.png#averageHue=%23535251&clientId=u27b16ba1-47f2-4&from=paste&height=355&id=uf1efa21d&originHeight=538&originWidth=330&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=37161&status=done&style=none&taskId=ua18fd32e-e1f0-494a-874c-befaf8a868c&title=&width=218)<br />解决方案: HDA结尾加一个`maya_locked_normal`属性, 设置如图:<br />![企业微信截图_16944216285792.png](https://cdn.nlark.com/yuque/0/2023/png/504873/1694422349283-b9ed6a20-cc4c-4f9d-a589-e6ee2e35703f.png#averageHue=%23343434&clientId=u27b16ba1-47f2-4&from=paste&height=823&id=u00066133&originHeight=1138&originWidth=1010&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=101801&status=done&style=none&taskId=u77d9e4df-b2d7-48d9-94eb-e430ce3221c&title=&width=730)\n\n\n",
       "properties": {
         "title": "Houdini踩坑记录",
         "urlname": "fsmrgf7ce2gotyvn",
+        "date": "2023-07-04 02:25:16",
+        "updated": "2023-09-11 08:54:20",
         "author": "Jason Ma",
-        "date": "2023-07-04 10:25:16",
-        "updated": "2023-07-16 19:01:50",
         "tags": [
           "DCC"
         ]
@@ -69,7 +69,9 @@
           "doc_id": "fsmrgf7ce2gotyvn"
         }
       ],
-      "body": ""
+      "body": "",
+      "realName": "Houdini踩坑记录",
+      "relativePath": "/TA/Houdini/Houdini踩坑记录.md"
     },
     {
       "id": 126619575,
