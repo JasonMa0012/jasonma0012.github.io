@@ -1,14 +1,12 @@
 ---
 tags:
   - GPGPU
+  - VFX
 title: UE Niagara科普
 urlname: meh35f
+date: "2022-08-31 14:14:42"
+updated: "2023-10-15 14:41:37"
 author: Jason Ma
-date: '2022-08-31 22:14:42'
-updated: '2023-07-16 22:52:42'
-categories:
-  - TA
-  - UE
 ---
 
 一篇面向美术和 TA 的 Niagara 科普.

@@ -1,14 +1,11 @@
 ---
 title: UE解决Installed Build包体过大
 urlname: ai6iq9ebtbpfqnzd
+date: "2023-03-30 09:17:57"
+updated: "2023-10-15 14:41:12"
 author: Jason Ma
-date: '2023-03-30 17:17:57'
-updated: '2023-07-16 19:00:34'
 tags:
-  - 工具
-categories:
-  - TA
-  - UE
+  - Workflow
 ---
 
 # 前提
