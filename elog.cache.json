@@ -649,6 +649,29 @@
       "body": "",
       "realName": "UE开发常用Git指令",
       "relativePath": "/TA/UE/UE Niagara科普/UE开发常用Git指令.md"
+    },
+    {
+      "id": 159714395,
+      "doc_id": "dkz03dygqyd5081s",
+      "title": "dkz03dygqyd5081s",
+      "updated": 1709822798000,
+      "body_original": "<a name=\"RQ8mZ\"></a>\n# 硬件准备（QNAS mini、网络拓扑、宽带）\n- QNAS mini：N100 CPU，16G内存，2 * 2.5G网口，6 * 2.5寸SATA，买的闲鱼成品\n- 公网IPv6地址（打电信客服电话，说要装监控，顺便可以改桥接）\n- 光猫 <=> NAS <=> PC，NAS设置网桥使PC上网\n<a name=\"ym8Br\"></a>\n# 黑群晖7.2+安装并洗白（U盘引导）\n由于买的是成品NAS，卖家已经帮忙装好了虚拟机版黑群晖，但后来发现稳定性以及自定义的便捷性并不好，于是自己重新装了硬件黑群晖：<br />[一起来玩群晖DSM7.2，ARPL引导黑群晖7.2详细教程_NAS存储_什么值得买](https://post.smzdm.com/p/allk3o4g/)<br />QNAS mini建议选择型号A6400，洗白码可以在电商平台购买到。如果不使用多媒体相关功能没有要求可以不洗白。<br />本想直接安装在内置SSD中，但DSM7.2+后必须使用U盘引导，尝试了一些教程后失败，故放弃。\n<a name=\"RjadN\"></a>\n# 启用群晖DDNS服务实现外网IPv6访问\n![image.png](https://cdn.nlark.com/yuque/0/2024/png/504873/1709822389385-3c01028a-adbf-436f-822a-921d47b17206.png#averageHue=%23181b1d&clientId=u2555bb30-dacc-4&from=paste&height=501&id=u7615da97&originHeight=626&originWidth=1305&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=59514&status=done&style=none&taskId=ueed0cb80-cb09-4fef-badc-e8283ad984b&title=&width=1044)\n<a name=\"LRYPe\"></a>\n# Cloudflare代理自定义域名实现外网IPv4访问\n由于我们只有公网IPv6地址，而某些网络是不支持IPv6的（比如公司内网），所以需要一个同时支持IPv4和IPv6的服务器做中转来访问NAS。\n\n[群晖cloudflare 代理ipv6实现外网ipv4网络访问（2023可用）_cloudflareipv6转ipv4-CSDN博客](https://blog.csdn.net/u013005016/article/details/134973993)<br />此教程中部分步骤是多余的，在将域名添加到CF后，需要SSL/TLS 加密模式设为完全：<br />![image.png](https://cdn.nlark.com/yuque/0/2024/png/504873/1709822202321-f3dd4dcd-0e98-42b1-be5c-2bbca28bc6cc.png#averageHue=%23161d23&clientId=u2555bb30-dacc-4&from=paste&height=544&id=u9db2dbb9&originHeight=680&originWidth=1962&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=113026&status=done&style=none&taskId=uc090a438-cb84-4dfa-8513-55a773775a0&title=&width=1569.6)<br />然后通过Origin Rules给域名设置自定义的端口，即可用域名直接访问到群晖：<br />![image.png](https://cdn.nlark.com/yuque/0/2024/png/504873/1709822260047-349324ce-9593-4072-8af2-0df3afc3573e.png#averageHue=%23191c1d&clientId=u2555bb30-dacc-4&from=paste&height=1182&id=u48449b94&originHeight=1478&originWidth=1340&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=158353&status=done&style=none&taskId=u48ffde34-326c-4855-8a7d-61eba1e4e83&title=&width=1072)\n\n因为流量需要先经过Cloudflare服务器，所以对速度有一定影响。<br />上海电信的测速结果约为直接连接的70%，但是延迟从数毫秒上升到数百毫秒，实际体验的响应速度明显变慢。<br />不过这对于一个免费的服务来说完全是可以接受的，甚至速度比付费的阿里云CND（由于大陆区需要备案，所以用的是港澳台区进行测试）要快得多。\n\n<a name=\"GWioz\"></a>\n# 通过支持IPv6的付费VPN实现自定义端口的外网IPv4访问\n在尝试使用经过Cloudflare代理的域名登录Synology Drive时会发现无法访问，因为Synology Drive使用的端口是6690，而Cloudflare的代理仅支持少数几个端口。<br />解决方法是在Synology Drive登录界面设置代理服务器，使用支持IPv6的代理服务器，然后还要关掉群晖的IP检查：<br />![image.png](https://cdn.nlark.com/yuque/0/2024/png/504873/1709822770800-14a3329c-3441-407d-9aa1-4d6bfc248b48.png#averageHue=%23191c1f&clientId=u2555bb30-dacc-4&from=paste&height=551&id=u2d7c1175&originHeight=689&originWidth=1163&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=103329&status=done&style=none&taskId=u8930f9d0-0e20-4185-97ec-5ca30611d58&title=&width=930.4)\n",
+      "properties": {
+        "title": "黑群晖SDN网关下从零实现IPv4/6内外网高速访问",
+        "urlname": "dkz03dygqyd5081s",
+        "date": "2024-02-26 16:38:48",
+        "updated": "2024-03-07 14:46:38",
+        "author": "Jason Ma"
+      },
+      "catalog": [
+        {
+          "title": "Web",
+          "doc_id": "dkz03dygqyd5081s"
+        }
+      ],
+      "body": "",
+      "realName": "黑群晖SDN网关下从零实现IPv4!6内外网高速访问",
+      "relativePath": "/Web/黑群晖SDN网关下从零实现IPv4!6内外网高速访问.md"
     }
   ],
   "catalog": [
@@ -972,8 +995,26 @@
       "visible": 1,
       "prev_uuid": "peyF6hR-4Splp2Kk",
       "sibling_uuid": "918400:atnhzh3yxfcdz9mz",
-      "child_uuid": "2uhp1s2J0Z2Ooi2B",
+      "child_uuid": "1axwGGtOJArEF-00",
       "parent_uuid": "",
+      "_serializer": "v2.toc_item"
+    },
+    {
+      "uuid": "1axwGGtOJArEF-00",
+      "type": "DOC",
+      "title": "黑群晖SDN网关下从零实现IPv4/6内外网高速访问",
+      "url": "dkz03dygqyd5081s",
+      "slug": "dkz03dygqyd5081s",
+      "id": 159714395,
+      "doc_id": 159714395,
+      "level": 1,
+      "depth": 2,
+      "open_window": 1,
+      "visible": 1,
+      "prev_uuid": "WID1i8-fvjGDhkBO",
+      "sibling_uuid": "2uhp1s2J0Z2Ooi2B",
+      "child_uuid": "",
+      "parent_uuid": "WID1i8-fvjGDhkBO",
       "_serializer": "v2.toc_item"
     },
     {
@@ -988,7 +1029,7 @@
       "depth": 2,
       "open_window": 0,
       "visible": 1,
-      "prev_uuid": "WID1i8-fvjGDhkBO",
+      "prev_uuid": "1axwGGtOJArEF-00",
       "sibling_uuid": "aAFOiQN8hrxsinhg",
       "child_uuid": "",
       "parent_uuid": "WID1i8-fvjGDhkBO",
