@@ -136,13 +136,13 @@
       "id": 120059084,
       "doc_id": "ai6iq9ebtbpfqnzd",
       "title": "ai6iq9ebtbpfqnzd",
-      "updated": 1697380872000,
-      "body_original": "---<br />tags:\n\n- Workflow\n\n---\n<a name=\"a62d8a1a\"></a>\n# 前提\n需要从源码打包UE给其他用户使用, 结果打出的包过大.\n<a name=\"703d6307\"></a>\n# 过程\n尝试使用[官方](https://docs.unrealengine.com/5.1/en-US/using-an-installed-build-of-unreal-engine/)的UAT脚本打包:\n\n```jsx\nEngine\\Build\\BatchFiles\\RunUAT.bat BuildGraph -target=\"Make Installed Build Win64\" -script=Engine/Build/InstalledEngineBuild.xml -set:WithMac=false -set:WithMacArm64=false -set:WithAndroid=false -set:WithIOS=false -set:WithTVOS=false -set:WithLinux=false -set:WithLinuxArm64=false -set:WithHTML5=false -set:WithSwitch=false -WithDDC=false -set:WithWin32=false -set:WithLumin=false -set:WithPS4=false -set:WithXboxOne=false -set:WithHoloLens=false -set:GameConfigurations=Shipping\n```\n<a name=\"5ad7f5a8\"></a>\n# 结果\n包体90GB, 远超官方的30+GB:<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/504873/1680167939367-719d4322-e450-4ca1-b0bc-d1c0d226db05.png#averageHue=%23847256&clientId=uc434dd9c-5327-4&from=paste&height=566&id=u79892da1&originHeight=707&originWidth=529&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=99262&status=done&style=none&taskId=u26df6b98-79b6-4864-8c25-1c7e43736cc&title=&width=423.2)<br />并且多了很多二进制:<br />![2CYT})$V6AQANSGI4%WA8U7.png](https://cdn.nlark.com/yuque/0/2023/png/504873/1680167957490-480c0dfe-5d81-4453-9712-d250ccc3c2b7.png#averageHue=%23323528&clientId=uc434dd9c-5327-4&from=paste&height=2083&id=u82a3f78f&originHeight=2604&originWidth=2000&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=4963573&status=done&style=none&taskId=ubfa2cdf1-beeb-411b-b107-f13d871e0a0&title=&width=1600)\n<a name=\"de842a6c\"></a>\n## 解决方案\n需要再写个`bat`脚本删除所有`.pdb`文件:\n```jsx\n@echo off\nsetlocal enabledelayedexpansion\n\nset target_directory=LocalBuilds\n\nfor /r \"%target_directory%\" %%f in (*.pdb) do (\n    echo Deleting \"%%f\"\n    del \"%%f\"\n)\n\necho All .pdb files in \"%target_directory%\" have been deleted.\n\nendlocal\n```\n删除后包体大小降到了30G以内, 比官方的还小.<br />注意, 引擎将不带调试信息, 也不能打包C++游戏, 但十分适合分发给美术使用.\n",
+      "updated": 1712504120000,
+      "body_original": "---<br />tags:\n\n- Workflow\n\n---\n<a name=\"a62d8a1a\"></a>\n# 前提\n需要从源码打包UE给其他用户使用, 结果打出的包过大.\n<a name=\"703d6307\"></a>\n# 过程\n尝试使用[官方](https://docs.unrealengine.com/5.1/en-US/using-an-installed-build-of-unreal-engine/)的UAT脚本打包:\n\n```jsx\nEngine\\Build\\BatchFiles\\RunUAT.bat BuildGraph -target=\"Make Installed Build Win64\" -script=Engine/Build/InstalledEngineBuild.xml -set:WithMac=false -set:WithMacArm64=false -set:WithAndroid=false -set:WithIOS=false -set:WithTVOS=false -set:WithLinux=false -set:WithLinuxArm64=false -set:WithHTML5=false -set:WithSwitch=false -WithDDC=false -set:WithWin32=false -set:WithLumin=false -set:WithPS4=false -set:WithXboxOne=false -set:WithHoloLens=false -set:GameConfigurations=Shipping\n```\n<a name=\"5ad7f5a8\"></a>\n# 结果\n包体90GB, 远超官方的30+GB:<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/504873/1680167939367-719d4322-e450-4ca1-b0bc-d1c0d226db05.png#averageHue=%23847256&clientId=uc434dd9c-5327-4&from=paste&height=566&id=u79892da1&originHeight=707&originWidth=529&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=99262&status=done&style=none&taskId=u26df6b98-79b6-4864-8c25-1c7e43736cc&title=&width=423.2)<br />并且多了很多二进制:<br />![2CYT})$V6AQANSGI4%WA8U7.png](https://cdn.nlark.com/yuque/0/2023/png/504873/1680167957490-480c0dfe-5d81-4453-9712-d250ccc3c2b7.png#averageHue=%23323528&clientId=uc434dd9c-5327-4&from=paste&height=2083&id=u82a3f78f&originHeight=2604&originWidth=2000&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=4963573&status=done&style=none&taskId=ubfa2cdf1-beeb-411b-b107-f13d871e0a0&title=&width=1600)\n<a name=\"RhdJl\"></a>\n# 解决方案\n<a name=\"TYlwm\"></a>\n## 新建脚本删除所有pdb文件\n需要再写个`bat`脚本删除所有`.pdb`文件:\n```jsx\n@echo off\nsetlocal enabledelayedexpansion\n\nset target_directory=LocalBuilds\n\nfor /r \"%target_directory%\" %%f in (*.pdb) do (\n    echo Deleting \"%%f\"\n    del \"%%f\"\n)\n\necho All .pdb files in \"%target_directory%\" have been deleted.\n\nendlocal\n```\n\n<a name=\"MXp7n\"></a>\n## 修改InstalledEngineFilters.xml过滤所有pdb文件\n修改Engine/Build/InstalledEngineFilters.xml文件:\n```xml\n...\n<Property Name=\"CopyEditorExceptions\">\n\n  <!-- 新增下面这行即可过滤掉所有.pdb -->\n  ....pdb\n\n  ...\n```\n\n删除后包体大小降到了30G以内, 比官方的还小.\n\n<a name=\"CwiK2\"></a>\n## 注意事项\n注意, 删除pdb后引擎将不带调试信息, 也不能打包C++游戏, 但十分适合分发给美术使用.\n",
       "properties": {
         "title": "UE解决Installed Build包体过大",
         "urlname": "ai6iq9ebtbpfqnzd",
         "date": "2023-03-30 09:17:57",
-        "updated": "2023-10-15 14:41:12",
+        "updated": "2024-04-07 15:35:20",
         "author": "Jason Ma",
         "tags": [
           "Workflow"
@@ -623,32 +623,24 @@
       "id": 142528899,
       "doc_id": "swszkkg8zqxp9em3",
       "title": "swszkkg8zqxp9em3",
-      "updated": 1697476620000,
-      "body_original": "--<br />tags:\n\n- Git\n- UE\n\n---\n\n<a name=\"sAO2b\"></a>\n## 升级UE版本\n<a name=\"M4EPw\"></a>\n### 将当前分支相对于Epic的改动打包成diff.patch\n需要先将Epic仓库添加到repo, 如:<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/504873/1697475565605-cbd1391a-0db1-42e6-9722-0ce30a7524b6.png#averageHue=%232d2e30&clientId=uf4e6188b-463b-4&from=paste&height=350&id=uc25f3790&originHeight=437&originWidth=316&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=24043&status=done&style=none&taskId=u57828908-6da8-47f2-8611-3fcc7b23551&title=&width=252.8)\n\n```\n$ git diff --binary Epic/5.2 5.2 > diff.patch\n```\n\n<a name=\"BXjpU\"></a>\n### 将patch应用到新分支\n\n```\n$ git apply --reject --binary --whitespace=nowarn diff.patch\n```\n--reject: 这将在发生冲突的每个文件旁边创建一个 .rej 文件，该文件包含无法应用的差异。您可以手动编辑这些文件以解决冲突。解决冲突后，您可以删除.rej文件并添加和提交合并后的文件以完成应用过程。\n\n插件目录可能不会立即被Git追踪, 需要先解决.gitignore的冲突, 确保没有被忽略.\n",
+      "updated": 1712504617000,
+      "body_original": "--<br />tags:\n\n- Git\n- UE\n\n---\n\n<a name=\"oQ4UB\"></a>\n# 拉取新版UE\n<a name=\"H4qXO\"></a>\n## 拉取特定远端分支\nfetch特定分支的同时需要手动更新引用, 该分支才会出现在origin列表中:\n```\n$ git fetch origin 5.3:refs/remotes/origin/5.3 --depth=1\n```\n\n然后再checkout到本地分支:\n```\n$ git checkout -b 5.3 origin/5.3\n```\n\n<a name=\"agQU2\"></a>\n# 升级自定义UE的版本\n<a name=\"VLSFG\"></a>\n## 将当前分支相对于Epic的改动打包成diff.patch\n需要先将Epic仓库添加到repo, 如:<br />![image.png](https://cdn.nlark.com/yuque/0/2023/png/504873/1697475565605-cbd1391a-0db1-42e6-9722-0ce30a7524b6.png#averageHue=%232d2e30&clientId=uf4e6188b-463b-4&from=paste&height=350&id=uc25f3790&originHeight=437&originWidth=316&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=24043&status=done&style=none&taskId=u57828908-6da8-47f2-8611-3fcc7b23551&title=&width=252.8)\n\n```\n$ git diff --binary Epic/5.2 5.2 > diff.patch\n```\n\n<a name=\"Myafi\"></a>\n## 将patch应用到新分支\n\n```\n$ git apply --reject --binary --whitespace=nowarn diff.patch\n```\n--reject: 这将在发生冲突的每个文件旁边创建一个 .rej 文件，该文件包含无法应用的差异。您可以手动编辑这些文件以解决冲突。解决冲突后，您可以删除.rej文件并添加和提交合并后的文件以完成应用过程。\n\n某些目录可能不会立即被Git追踪, 需要先解决.gitignore的冲突, 确保没有被忽略.\n",
       "properties": {
-        "title": "UE开发常用Git指令",
+        "title": "常用Git指令",
         "urlname": "swszkkg8zqxp9em3",
         "date": "2023-10-16 16:55:00",
-        "updated": "2023-10-16 17:17:00",
+        "updated": "2024-04-07 15:43:37",
         "author": "Jason Ma"
       },
       "catalog": [
         {
           "title": "TA",
           "doc_id": "swszkkg8zqxp9em3"
-        },
-        {
-          "title": "UE",
-          "doc_id": "swszkkg8zqxp9em3"
-        },
-        {
-          "title": "UE Niagara科普",
-          "doc_id": "swszkkg8zqxp9em3"
         }
       ],
       "body": "",
-      "realName": "UE开发常用Git指令",
-      "relativePath": "/TA/UE/UE Niagara科普/UE开发常用Git指令.md"
+      "realName": "常用Git指令",
+      "relativePath": "/TA/常用Git指令.md"
     },
     {
       "id": 159714395,
@@ -797,26 +789,8 @@
       "visible": 1,
       "prev_uuid": "WssjCbG1rq7kjhAX",
       "sibling_uuid": "",
-      "child_uuid": "Qvgsv3nx8o0JLQlR",
-      "parent_uuid": "MIJmUAh2ln5YkVWp",
-      "_serializer": "v2.toc_item"
-    },
-    {
-      "uuid": "Qvgsv3nx8o0JLQlR",
-      "type": "DOC",
-      "title": "UE开发常用Git指令",
-      "url": "swszkkg8zqxp9em3",
-      "slug": "swszkkg8zqxp9em3",
-      "id": 142528899,
-      "doc_id": 142528899,
-      "level": 3,
-      "depth": 4,
-      "open_window": 1,
-      "visible": 1,
-      "prev_uuid": "aiQRzbDOD72k2gdX",
-      "sibling_uuid": "",
       "child_uuid": "",
-      "parent_uuid": "aiQRzbDOD72k2gdX",
+      "parent_uuid": "MIJmUAh2ln5YkVWp",
       "_serializer": "v2.toc_item"
     },
     {
@@ -922,7 +896,7 @@
       "open_window": 1,
       "visible": 1,
       "prev_uuid": "HYoUtvcGRDN4xCAD",
-      "sibling_uuid": "TcdJ_izv67dq5ZpH",
+      "sibling_uuid": "Qvgsv3nx8o0JLQlR",
       "child_uuid": "3wwG47VMztyjbacv",
       "parent_uuid": "peyF6hR-4Splp2Kk",
       "_serializer": "v2.toc_item"
@@ -946,6 +920,24 @@
       "_serializer": "v2.toc_item"
     },
     {
+      "uuid": "Qvgsv3nx8o0JLQlR",
+      "type": "DOC",
+      "title": "常用Git指令",
+      "url": "swszkkg8zqxp9em3",
+      "slug": "swszkkg8zqxp9em3",
+      "id": 142528899,
+      "doc_id": 142528899,
+      "level": 1,
+      "depth": 2,
+      "open_window": 1,
+      "visible": 1,
+      "prev_uuid": "zerpGaaim4Seit83",
+      "sibling_uuid": "TcdJ_izv67dq5ZpH",
+      "child_uuid": "",
+      "parent_uuid": "peyF6hR-4Splp2Kk",
+      "_serializer": "v2.toc_item"
+    },
+    {
       "uuid": "TcdJ_izv67dq5ZpH",
       "type": "DOC",
       "title": "HLSL法线、高度、深度、世界坐标互转",
@@ -957,7 +949,7 @@
       "depth": 2,
       "open_window": 1,
       "visible": 1,
-      "prev_uuid": "zerpGaaim4Seit83",
+      "prev_uuid": "Qvgsv3nx8o0JLQlR",
       "sibling_uuid": "ucexrhuMucoQNsiA",
       "child_uuid": "",
       "parent_uuid": "peyF6hR-4Splp2Kk",

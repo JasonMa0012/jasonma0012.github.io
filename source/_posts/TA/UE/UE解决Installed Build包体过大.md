@@ -2,7 +2,7 @@
 title: UE解决Installed Build包体过大
 urlname: ai6iq9ebtbpfqnzd
 date: "2023-03-30 09:17:57"
-updated: "2023-10-15 14:41:12"
+updated: "2024-04-07 15:35:20"
 author: Jason Ma
 tags:
   - Workflow
@@ -27,7 +27,9 @@ Engine\Build\BatchFiles\RunUAT.bat BuildGraph -target="Make Installed Build Win6
 并且多了很多二进制:
 ![2CYT})$V6AQANSGI4%WA8U7.png](/images/yuqueAssets/lqGlqOf8DL2zatQwGC3WDi852T9J.png)
 
-## 解决方案
+# 解决方案
+
+## 新建脚本删除所有 pdb 文件
 
 需要再写个`bat`脚本删除所有`.pdb`文件:
 
@@ -47,5 +49,22 @@ echo All .pdb files in "%target_directory%" have been deleted.
 endlocal
 ```
 
+## 修改 InstalledEngineFilters.xml 过滤所有 pdb 文件
+
+修改 Engine/Build/InstalledEngineFilters.xml 文件:
+
+```xml
+...
+<Property Name="CopyEditorExceptions">
+
+  <!-- 新增下面这行即可过滤掉所有.pdb -->
+  ....pdb
+
+  ...
+```
+
 删除后包体大小降到了 30G 以内, 比官方的还小.
-注意, 引擎将不带调试信息, 也不能打包 C++游戏, 但十分适合分发给美术使用.
+
+## 注意事项
+
+注意, 删除 pdb 后引擎将不带调试信息, 也不能打包 C++游戏, 但十分适合分发给美术使用.
