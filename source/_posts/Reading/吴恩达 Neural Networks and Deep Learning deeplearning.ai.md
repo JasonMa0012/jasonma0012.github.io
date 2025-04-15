@@ -4,8 +4,6 @@ urlname: xdbdqx
 date: '2022-03-19 18:28:15'
 updated: '2023-06-14 23:23:27'
 author: Jason Ma
-categories:
-  - Reading
 ---
 
 
@@ -182,7 +180,7 @@ Geoffrey Hinton并不是第一个发明反向传播算法的人，但他的paper
 ## 补充：交叉熵代价函数
 交叉熵（cross-entropy）
 
-![](https://i.stack.imgur.com/LSVEc.png)
+![](/images/yuqueAssets/4e74aa87ddd701f96cee7f17c3a59cfb.png)
 
 [看得见的信息论-为什么用交叉熵作为逻辑回归的代价函数](https://zhuanlan.zhihu.com/p/31207556)
 
