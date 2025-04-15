@@ -1,1 +1,1 @@
-npm install @elog/cli@0.5.0 -g
+npm install @elog/cli -g

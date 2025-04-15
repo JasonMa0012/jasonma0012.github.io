@@ -1,28 +1,35 @@
 ---
 title: Houdini踩坑记录
 urlname: fsmrgf7ce2gotyvn
-date: "2023-07-04 02:25:16"
-updated: "2023-09-11 09:00:09"
+date: '2023-07-04 10:25:16'
+updated: '2025-04-15 23:52:46'
 author: Jason Ma
+cover: 'https://cdn.nlark.com/yuque/0/2023/png/504873/1688455716241-6b691d04-b8db-4351-9446-64eeb2fba9fa.png'
+description: '---tags: - DCC---材质 / 贴图 不更新Houdini做材质经常遇到Viewport中材质不更新的问题, 是因为Viewport的渲染器使用的是OpenGL, 是不会调用材质VOP的:https://www.sidefx.com/docs/houdini/shade/glsl....'
 tags:
   - DCC
 ---
-
 ## 材质 / 贴图 不更新
+Houdini做材质经常遇到Viewport中材质不更新的问题, 是因为Viewport的渲染器使用的是OpenGL, 是不会调用材质VOP的:
 
-Houdini 做材质经常遇到 Viewport 中材质不更新的问题, 是因为 Viewport 的渲染器使用的是 OpenGL, 是不会调用材质 VOP 的:
 [https://www.sidefx.com/docs/houdini/shade/glsl.html](https://www.sidefx.com/docs/houdini/shade/glsl.html)
+
 [https://www.sidefx.com/docs/houdini/shade/opengl.html](https://www.sidefx.com/docs/houdini/shade/opengl.html)
-一些内置的 Shader 可以在 Viewport 中显示是因为已经绑定好了 OpenGL 属性.
 
-但偶尔仍会遇到内置的 Shader 不更新的情况, 可以尝试:
+一些内置的Shader可以在Viewport中显示是因为已经绑定好了OpenGL属性.
 
-- 切换光照模式
-- 切换材质显示
-- 调整材质参数
-- Ctrl + S
 
-比较极端的情况下可能要使用 Python 节点触发材质参数修改:
+
+但偶尔仍会遇到内置的Shader不更新的情况, 可以尝试:
+
++ 切换光照模式
++ 切换材质显示
++ 调整材质参数
++ Ctrl + S
+
+
+
+比较极端的情况下可能要使用Python节点触发材质参数修改:
 
 ```python
 import hou
@@ -45,7 +52,12 @@ change_all_materials_color()
 print(111)
 ```
 
-这些代码会查找指定类型的 ShaderVOP 实例, 并修改其中参数从而触发材质更新.
-打开文件后点击此 Python 节点即可运行代码.
+这些代码会查找指定类型的ShaderVOP实例, 并修改其中参数从而触发材质更新.
 
-##
+打开文件后点击此Python节点即可运行代码.
+
+
+
+## 
+
+

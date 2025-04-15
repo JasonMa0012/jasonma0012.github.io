@@ -1,3 +1,4 @@
+# https://elog.1874.cool/notion/vy55q9xwlqlsfrvk
 name: Deploy To Github Pages
 
 on:
@@ -16,24 +17,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout
-        uses: actions/checkout@v2
+      - name: 检查分支
+        uses: actions/checkout@master
 
-      - name: Install Node
-        uses: actions/setup-node@v2
+      - name: 安装node环境
+        uses: actions/setup-node@master
         with:
-          node-version: "18.15.0"
+          node-version: "16.x"
 
-      - name: Cache NPM dependencies
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: ${{ runner.OS }}-npm-cache
-          restore-keys: |
-            ${{ runner.OS }}-npm-cache
-            
-      - name: Install Dependencies
-        run: npm install
+      - name: 安装依赖
+        run: |
+          export TZ='Asia/Shanghai'
+          npm install --prod
 
       - name: 拉取语雀/Notion的文章
         env:
