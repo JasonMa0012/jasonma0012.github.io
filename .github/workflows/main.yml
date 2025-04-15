@@ -1,5 +1,5 @@
 # https://elog.1874.cool/notion/vy55q9xwlqlsfrvk
-name: Deploy To Github Pages
+name: Sync Yuque to Hexo
 
 on:
   # 允许手动push触发
