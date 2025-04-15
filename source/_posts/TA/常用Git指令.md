@@ -4,11 +4,11 @@ urlname: swszkkg8zqxp9em3
 date: '2023-10-17 00:55:00'
 updated: '2025-04-15 23:50:41'
 author: Jason Ma
-cover: 'https://cdn.nlark.com/yuque/0/2023/png/504873/1697475565605-cbd1391a-0db1-42e6-9722-0ce30a7524b6.png'
-description: '---tags: - Git - UE---设置网络代理代理git config --global http.proxy socks5://127.0.0.1:10800 git config --global https.proxy socks5://127.0.0.1:10800取消代理g...'
 tags:
   - Git
   - UE
+categories:
+  - TA
 ---
 # 设置网络代理
 ## 代理

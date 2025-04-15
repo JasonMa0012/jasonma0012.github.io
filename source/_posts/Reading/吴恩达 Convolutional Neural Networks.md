@@ -4,8 +4,8 @@ urlname: kzxl93
 date: '2022-03-31 19:20:15'
 updated: '2023-06-14 23:23:38'
 author: Jason Ma
-cover: 'https://cdn.nlark.com/yuque/0/2022/png/504873/1648730361676-29773f86-f42d-4653-9bbe-d8161568aae0.png'
-description: 'https://player.bilibili.com/player.html?bvid=BV1FT4y1E74V&amp;p=108&amp;page=1081.1 计算机视觉1.2 边缘检测示例1.3 更多的边缘检测内容可以将卷积核作为参数，让机器学习去决定卷积核1.4 Padding为了平等地对待周围的...'
+categories:
+  - Reading
 ---
 [bilibili](https://player.bilibili.com/player.html?bvid=BV1FT4y1E74V&p=108&page=108)
 

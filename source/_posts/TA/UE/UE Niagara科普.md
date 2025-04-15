@@ -4,11 +4,12 @@ urlname: meh35f
 date: '2022-08-31 22:14:42'
 updated: '2025-04-15 23:52:36'
 author: Jason Ma
-cover: 'https://cdn.nlark.com/yuque/0/2022/png/504873/1662045238244-048941b7-6c72-4b3b-95e8-08479554f4a2.png'
-description: '---tags: - GPGPU - VFX---一篇面向美术和TA的Niagara科普.Niagara是什么Niagara是虚幻引擎的下一代视觉特效处理系统。技术美术师无需程序员的任何帮助，就能使用Niagara创建出丰富多彩的效果。此系统适应性强，灵活多变。为何要重新塑造虚幻引擎的视觉效果...'
 tags:
   - GPGPU
   - VFX
+categories:
+  - TA
+  - UE
 ---
 一篇面向美术和TA的Niagara科普.
 

@@ -1,61 +1,8 @@
 {
   "docs": [
     {
-      "id": 159714395,
-      "doc_id": "dkz03dygqyd5081s",
-      "title": "dkz03dygqyd5081s",
-      "updated": 1718433386000,
-      "properties": {
-        "title": "黑群晖SDN网关下从零实现IPv4/6内外网高速访问",
-        "urlname": "dkz03dygqyd5081s",
-        "date": "2024-02-27 00:38:48",
-        "updated": "2024-06-15 14:36:26",
-        "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/0/2024/png/504873/1709822202321-f3dd4dcd-0e98-42b1-be5c-2bbca28bc6cc.png",
-        "description": "硬件准备（QNAS mini、网络拓扑、宽带）QNAS mini：N100 CPU，16G内存，2 * 2.5G网口，6 * 2.5寸SATA，买的闲鱼成品公网IPv6地址（打电信客服电话，说要装监控，顺便可以改桥接）光猫  NAS  PC，NAS设置网桥使PC上网黑群晖7.2+安..."
-      },
-      "catalog": [
-        {
-          "title": "Web",
-          "doc_id": "dkz03dygqyd5081s"
-        }
-      ],
-      "body": "",
-      "realName": "黑群晖SDN网关下从零实现IPv4!6内外网高速访问",
-      "relativePath": "\\Web\\黑群晖SDN网关下从零实现IPv4!6内外网高速访问.md"
-    },
-    {
-      "id": 142528899,
-      "doc_id": "swszkkg8zqxp9em3",
-      "title": "swszkkg8zqxp9em3",
-      "updated": 1744732241000,
-      "properties": {
-        "title": "常用Git指令",
-        "urlname": "swszkkg8zqxp9em3",
-        "date": "2023-10-17 00:55:00",
-        "updated": "2025-04-15 23:50:41",
-        "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/0/2023/png/504873/1697475565605-cbd1391a-0db1-42e6-9722-0ce30a7524b6.png",
-        "description": "---tags: - Git - UE---设置网络代理代理git config --global http.proxy socks5://127.0.0.1:10800 git config --global https.proxy socks5://127.0.0.1:10800取消代理g...",
-        "tags": [
-          "Git",
-          "UE"
-        ]
-      },
-      "catalog": [
-        {
-          "title": "TA",
-          "doc_id": "swszkkg8zqxp9em3"
-        }
-      ],
-      "body": "",
-      "realName": "常用Git指令",
-      "relativePath": "\\TA\\常用Git指令.md"
-    },
-    {
       "id": 139480795,
       "doc_id": "gd0abdb7eapbztdn",
-      "title": "gd0abdb7eapbztdn",
       "updated": 1744732373000,
       "properties": {
         "title": "Houdini Engine (HDA) 踩坑记录",
@@ -63,8 +10,6 @@
         "date": "2023-09-11 16:59:02",
         "updated": "2025-04-15 23:52:53",
         "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/0/2023/png/504873/1694422328883-f78ac88e-14a4-4d19-a84f-03b299db2460.png",
-        "description": "---tags: - DCC---Maya HDA 无法修改法线Houdini 18.0, Maya 2018问题: Maya内通过Houdini Engine加载的HDA无法修改模型法线原因: Maya模型法线必须锁定法线后才能修改解决方案: HDA结尾加一个maya_locked_norm...",
         "tags": [
           "DCC"
         ]
@@ -79,42 +24,59 @@
           "doc_id": "gd0abdb7eapbztdn"
         }
       ],
-      "body": "",
       "realName": "Houdini Engine (HDA) 踩坑记录",
-      "relativePath": "\\TA\\Houdini\\Houdini Engine (HDA) 踩坑记录.md"
+      "relativePath": "\\TA\\Houdini\\Houdini Engine (HDA) 踩坑记录.md",
+      "docPath": "source\\_posts\\TA\\Houdini"
     },
     {
-      "id": 126619575,
-      "doc_id": "ww8dfgg04fgb7c85",
-      "title": "ww8dfgg04fgb7c85",
-      "updated": 1689505190000,
+      "id": 142528899,
+      "doc_id": "swszkkg8zqxp9em3",
+      "updated": 1744732241000,
       "properties": {
-        "title": "UE踩坑记录",
-        "urlname": "ww8dfgg04fgb7c85",
-        "date": "2023-06-04 00:24:56",
-        "updated": "2023-07-16 18:59:50",
+        "title": "常用Git指令",
+        "urlname": "swszkkg8zqxp9em3",
+        "date": "2023-10-17 00:55:00",
+        "updated": "2025-04-15 23:50:41",
         "author": "Jason Ma",
-        "description": "---tags:---动画骨骼名称不能有奇怪的符号, 否则动画可能导不进来. 比如\"+\", 但空格不影响导入.",
-        "tags": null
+        "tags": [
+          "Git",
+          "UE"
+        ]
       },
       "catalog": [
         {
           "title": "TA",
-          "doc_id": "ww8dfgg04fgb7c85"
-        },
-        {
-          "title": "UE",
-          "doc_id": "ww8dfgg04fgb7c85"
+          "doc_id": "swszkkg8zqxp9em3"
         }
       ],
-      "body": "",
-      "realName": "UE踩坑记录",
-      "relativePath": "\\TA\\UE\\UE踩坑记录.md"
+      "realName": "常用Git指令",
+      "relativePath": "\\TA\\常用Git指令.md",
+      "docPath": "source\\_posts\\TA"
+    },
+    {
+      "id": 159714395,
+      "doc_id": "dkz03dygqyd5081s",
+      "updated": 1718433386000,
+      "properties": {
+        "title": "黑群晖SDN网关下从零实现IPv4/6内外网高速访问",
+        "urlname": "dkz03dygqyd5081s",
+        "date": "2024-02-27 00:38:48",
+        "updated": "2024-06-15 14:36:26",
+        "author": "Jason Ma"
+      },
+      "catalog": [
+        {
+          "title": "Web",
+          "doc_id": "dkz03dygqyd5081s"
+        }
+      ],
+      "realName": "黑群晖SDN网关下从零实现IPv4!6内外网高速访问",
+      "relativePath": "\\Web\\黑群晖SDN网关下从零实现IPv4!6内外网高速访问.md",
+      "docPath": "source\\_posts\\Web"
     },
     {
       "id": 128436714,
       "doc_id": "ud4k7ereqxslvzdg",
-      "title": "ud4k7ereqxslvzdg",
       "updated": 1744732280000,
       "properties": {
         "title": "达芬奇踩坑记录",
@@ -122,7 +84,6 @@
         "date": "2023-06-24 23:30:06",
         "updated": "2025-04-15 23:51:20",
         "author": "Jason Ma",
-        "description": "---tags: - DCC---界面频闪 / 闪烁win11 N卡解决方法: 安装旧驱动，使用cuda11.6的版本（2022.5之前的版本，512.x亲测可以解决）",
         "tags": [
           "DCC"
         ]
@@ -137,14 +98,13 @@
           "doc_id": "ud4k7ereqxslvzdg"
         }
       ],
-      "body": "",
       "realName": "达芬奇踩坑记录",
-      "relativePath": "\\TA\\Other DCCs\\达芬奇踩坑记录.md"
+      "relativePath": "\\TA\\Other DCCs\\达芬奇踩坑记录.md",
+      "docPath": "source\\_posts\\TA\\Other DCCs"
     },
     {
       "id": 132145639,
       "doc_id": "fsmrgf7ce2gotyvn",
-      "title": "fsmrgf7ce2gotyvn",
       "updated": 1744732366000,
       "properties": {
         "title": "Houdini踩坑记录",
@@ -152,8 +112,6 @@
         "date": "2023-07-04 10:25:16",
         "updated": "2025-04-15 23:52:46",
         "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/0/2023/png/504873/1688455716241-6b691d04-b8db-4351-9446-64eeb2fba9fa.png",
-        "description": "---tags: - DCC---材质 / 贴图 不更新Houdini做材质经常遇到Viewport中材质不更新的问题, 是因为Viewport的渲染器使用的是OpenGL, 是不会调用材质VOP的:https://www.sidefx.com/docs/houdini/shade/glsl....",
         "tags": [
           "DCC"
         ]
@@ -168,23 +126,46 @@
           "doc_id": "fsmrgf7ce2gotyvn"
         }
       ],
-      "body": "",
       "realName": "Houdini踩坑记录",
-      "relativePath": "\\TA\\Houdini\\Houdini踩坑记录.md"
+      "relativePath": "\\TA\\Houdini\\Houdini踩坑记录.md",
+      "docPath": "source\\_posts\\TA\\Houdini"
+    },
+    {
+      "id": 126619575,
+      "doc_id": "ww8dfgg04fgb7c85",
+      "updated": 1689505190000,
+      "properties": {
+        "title": "UE踩坑记录",
+        "urlname": "ww8dfgg04fgb7c85",
+        "date": "2023-06-04 00:24:56",
+        "updated": "2023-07-16 18:59:50",
+        "author": "Jason Ma",
+        "tags": null
+      },
+      "catalog": [
+        {
+          "title": "TA",
+          "doc_id": "ww8dfgg04fgb7c85"
+        },
+        {
+          "title": "UE",
+          "doc_id": "ww8dfgg04fgb7c85"
+        }
+      ],
+      "realName": "UE踩坑记录",
+      "relativePath": "\\TA\\UE\\UE踩坑记录.md",
+      "docPath": "source\\_posts\\TA\\UE"
     },
     {
       "id": 126460690,
       "doc_id": "sfpr2alhqp7gh1xm",
-      "title": "sfpr2alhqp7gh1xm",
       "updated": 1686756240000,
       "properties": {
         "title": "CloudFlare加速Github Pages全球访问(含大陆)",
         "urlname": "sfpr2alhqp7gh1xm",
         "date": "2023-06-02 00:36:29",
         "updated": "2023-06-14 23:24:00",
-        "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/0/2023/png/504873/1685637458545-bccbcf00-c0be-4596-829d-abee35c3d88e.png",
-        "description": "参考: https://tding.top/archives/12c6c559.html配置完之后会发现无法访问, 经查需要将SSL模式设为Full:完成后使用国内移动数据进行测试, 可以裸连Github Pages, 速度挺快, 除了某些比较大的图片稍慢.另外Argo Smart Routi..."
+        "author": "Jason Ma"
       },
       "catalog": [
         {
@@ -192,14 +173,41 @@
           "doc_id": "sfpr2alhqp7gh1xm"
         }
       ],
-      "body": "",
       "realName": "CloudFlare加速Github Pages全球访问(含大陆)",
-      "relativePath": "\\Web\\CloudFlare加速Github Pages全球访问(含大陆).md"
+      "relativePath": "\\Web\\CloudFlare加速Github Pages全球访问(含大陆).md",
+      "docPath": "source\\_posts\\Web"
+    },
+    {
+      "id": 126601238,
+      "doc_id": "ompygag6ztknbc30",
+      "updated": 1744732412000,
+      "properties": {
+        "title": "Houdini常用几何操作",
+        "urlname": "ompygag6ztknbc30",
+        "date": "2023-06-03 17:05:07",
+        "updated": "2025-04-15 23:53:32",
+        "author": "Jason Ma",
+        "tags": [
+          "DCC"
+        ]
+      },
+      "catalog": [
+        {
+          "title": "TA",
+          "doc_id": "ompygag6ztknbc30"
+        },
+        {
+          "title": "Houdini",
+          "doc_id": "ompygag6ztknbc30"
+        }
+      ],
+      "realName": "Houdini常用几何操作",
+      "relativePath": "\\TA\\Houdini\\Houdini常用几何操作.md",
+      "docPath": "source\\_posts\\TA\\Houdini"
     },
     {
       "id": 120059084,
       "doc_id": "ai6iq9ebtbpfqnzd",
-      "title": "ai6iq9ebtbpfqnzd",
       "updated": 1744732316000,
       "properties": {
         "title": "UE解决Installed Build包体过大",
@@ -207,8 +215,6 @@
         "date": "2023-03-30 17:17:57",
         "updated": "2025-04-15 23:51:56",
         "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/0/2023/png/504873/1680167939367-719d4322-e450-4ca1-b0bc-d1c0d226db05.png",
-        "description": "---tags: - Workflow---前提需要从源码打包UE给其他用户使用, 结果打出的包过大.过程尝试使用官方的UAT脚本打包:Engine\\Build\\BatchFiles\\RunUAT.bat BuildGraph -target=\"Make Installed Build Win...",
         "tags": [
           "Workflow"
         ]
@@ -223,45 +229,13 @@
           "doc_id": "ai6iq9ebtbpfqnzd"
         }
       ],
-      "body": "",
       "realName": "UE解决Installed Build包体过大",
-      "relativePath": "\\TA\\UE\\UE解决Installed Build包体过大.md"
-    },
-    {
-      "id": 126601238,
-      "doc_id": "ompygag6ztknbc30",
-      "title": "ompygag6ztknbc30",
-      "updated": 1744732412000,
-      "properties": {
-        "title": "Houdini常用几何操作",
-        "urlname": "ompygag6ztknbc30",
-        "date": "2023-06-03 17:05:07",
-        "updated": "2025-04-15 23:53:32",
-        "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/0/2023/png/504873/1685809427830-3b444944-1f50-4a6e-a870-b85b754661b0.png",
-        "description": "---tags: - DCC---循环边在拓扑比较特殊, 无法使用Edge Loop时可以使用Poly Bevel替代:修改导入的骨骼名称有根骨骼名字的面前带\"+\"导致动画无法导入ue, 所以要在houdini中进行骨骼重命名.导入FBX Character后有3个输出查看左侧Rest Geo...",
-        "tags": [
-          "DCC"
-        ]
-      },
-      "catalog": [
-        {
-          "title": "TA",
-          "doc_id": "ompygag6ztknbc30"
-        },
-        {
-          "title": "Houdini",
-          "doc_id": "ompygag6ztknbc30"
-        }
-      ],
-      "body": "",
-      "realName": "Houdini常用几何操作",
-      "relativePath": "\\TA\\Houdini\\Houdini常用几何操作.md"
+      "relativePath": "\\TA\\UE\\UE解决Installed Build包体过大.md",
+      "docPath": "source\\_posts\\TA\\UE"
     },
     {
       "id": 120057885,
       "doc_id": "yf39e891h5yy57f5",
-      "title": "yf39e891h5yy57f5",
       "updated": 1744732419000,
       "properties": {
         "title": "Houdini通过Alembic导出Vertex Color + Alpha + Multi UV",
@@ -269,8 +243,6 @@
         "date": "2023-03-30 17:12:22",
         "updated": "2025-04-15 23:53:39",
         "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/0/2023/png/504873/1680167779805-8c0784a9-323a-4bfc-955a-42854db6b702.png",
-        "description": "---tags: - DCC---Houdini一般(FBX)的导出顶点色的方式是Cd (vector) + Alpha (float), 但如果用ABC导出, 就需要用以下格式:Cd (float4)而且必须用Attribute Create节点, 如果用Attribute Wrangle试...",
         "tags": [
           "DCC"
         ]
@@ -285,14 +257,13 @@
           "doc_id": "yf39e891h5yy57f5"
         }
       ],
-      "body": "",
       "realName": "Houdini通过Alembic导出Vertex Color + Alpha + Multi UV",
-      "relativePath": "\\TA\\Houdini\\Houdini通过Alembic导出Vertex Color + Alpha + Multi UV.md"
+      "relativePath": "\\TA\\Houdini\\Houdini通过Alembic导出Vertex Color + Alpha + Multi UV.md",
+      "docPath": "source\\_posts\\TA\\Houdini"
     },
     {
       "id": 91383592,
       "doc_id": "meh35f",
-      "title": "meh35f",
       "updated": 1744732356000,
       "properties": {
         "title": "UE Niagara科普",
@@ -300,8 +271,6 @@
         "date": "2022-08-31 22:14:42",
         "updated": "2025-04-15 23:52:36",
         "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/0/2022/png/504873/1662045238244-048941b7-6c72-4b3b-95e8-08479554f4a2.png",
-        "description": "---tags: - GPGPU - VFX---一篇面向美术和TA的Niagara科普.Niagara是什么Niagara是虚幻引擎的下一代视觉特效处理系统。技术美术师无需程序员的任何帮助，就能使用Niagara创建出丰富多彩的效果。此系统适应性强，灵活多变。为何要重新塑造虚幻引擎的视觉效果...",
         "tags": [
           "GPGPU",
           "VFX"
@@ -317,23 +286,20 @@
           "doc_id": "meh35f"
         }
       ],
-      "body": "",
       "realName": "UE Niagara科普",
-      "relativePath": "\\TA\\UE\\UE Niagara科普.md"
+      "relativePath": "\\TA\\UE\\UE Niagara科普.md",
+      "docPath": "source\\_posts\\TA\\UE"
     },
     {
       "id": 105738879,
       "doc_id": "gwh0hz7p5kwkvfuz",
-      "title": "gwh0hz7p5kwkvfuz",
       "updated": 1715838268000,
       "properties": {
         "title": "李忠秋 结构化思维",
         "urlname": "gwh0hz7p5kwkvfuz",
         "date": "2022-11-10 22:23:54",
         "updated": "2024-05-16 13:44:28",
-        "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/0/2022/png/504873/1668091238461-cc443e29-843a-4cd8-96ac-6cc3c9f1eb90.png",
-        "description": "890新商学 讲师: 李忠秋 课程: 结构思考力通过本课可以学到如何更加高效准确地表达自己的观点, 然而该如何更好地得出观点还需要深入学习理念篇结构思维是理性思考的前提, 通过事实, 理由, 结论看世界方法篇理解重构论证类比论 结论先行论总分总提问然后呢(横向), 所以呢 (向上), 为什么 ..."
+        "author": "Jason Ma"
       },
       "catalog": [
         {
@@ -341,23 +307,20 @@
           "doc_id": "gwh0hz7p5kwkvfuz"
         }
       ],
-      "body": "",
       "realName": "李忠秋 结构化思维",
-      "relativePath": "\\Reading\\李忠秋 结构化思维.md"
+      "relativePath": "\\Reading\\李忠秋 结构化思维.md",
+      "docPath": "source\\_posts\\Reading"
     },
     {
       "id": 72013186,
       "doc_id": "mz2vt4",
-      "title": "mz2vt4",
       "updated": 1686756210000,
       "properties": {
         "title": "吴恩达 Improving Deep Neural Networks",
         "urlname": "mz2vt4",
         "date": "2022-04-02 15:33:12",
         "updated": "2023-06-14 23:23:30",
-        "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/0/2022/png/504873/1648885068639-555df7e8-e2a7-4d36-8ac9-ea3e8a8eb878.png",
-        "description": "https://player.bilibili.com/player.html?bvid=BV1FT4y1E74V&amp;p=61&amp;page=612.1 Mini-Batch梯度下降把巨大的数据集分割成很多小的进行训练2.2 理解mini-batch梯度下降每次迭代随机选择mini-batch，所以..."
+        "author": "Jason Ma"
       },
       "catalog": [
         {
@@ -365,23 +328,20 @@
           "doc_id": "mz2vt4"
         }
       ],
-      "body": "",
       "realName": "吴恩达 Improving Deep Neural Networks",
-      "relativePath": "\\Reading\\吴恩达 Improving Deep Neural Networks.md"
+      "relativePath": "\\Reading\\吴恩达 Improving Deep Neural Networks.md",
+      "docPath": "source\\_posts\\Reading"
     },
     {
       "id": 71307307,
       "doc_id": "sopcnn",
-      "title": "sopcnn",
       "updated": 1724567776000,
       "properties": {
         "title": "吴恩达 Structuring ML Projects",
         "urlname": "sopcnn",
         "date": "2022-03-28 17:00:27",
         "updated": "2024-08-25 14:36:16",
-        "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/0/2022/png/504873/1648478785396-6d862bc0-9757-4b34-95ca-7de3cdf5098a.png",
-        "description": "https://player.bilibili.com/player.html?bvid=BV1FT4y1E74V&amp;p=84&amp;page=841.1 Why ML Strategy用在优化模型时往往有很多选择，一旦选错了可能白白浪费几个月时间，做出合理的判断、明智的选择非常重要，本课将会传授一些..."
+        "author": "Jason Ma"
       },
       "catalog": [
         {
@@ -389,23 +349,20 @@
           "doc_id": "sopcnn"
         }
       ],
-      "body": "",
       "realName": "吴恩达 Structuring ML Projects",
-      "relativePath": "\\Reading\\吴恩达 Structuring ML Projects.md"
+      "relativePath": "\\Reading\\吴恩达 Structuring ML Projects.md",
+      "docPath": "source\\_posts\\Reading"
     },
     {
       "id": 71769216,
       "doc_id": "kzxl93",
-      "title": "kzxl93",
       "updated": 1686756218000,
       "properties": {
         "title": "吴恩达 Convolutional Neural Networks",
         "urlname": "kzxl93",
         "date": "2022-03-31 19:20:15",
         "updated": "2023-06-14 23:23:38",
-        "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/0/2022/png/504873/1648730361676-29773f86-f42d-4653-9bbe-d8161568aae0.png",
-        "description": "https://player.bilibili.com/player.html?bvid=BV1FT4y1E74V&amp;p=108&amp;page=1081.1 计算机视觉1.2 边缘检测示例1.3 更多的边缘检测内容可以将卷积核作为参数，让机器学习去决定卷积核1.4 Padding为了平等地对待周围的..."
+        "author": "Jason Ma"
       },
       "catalog": [
         {
@@ -413,23 +370,20 @@
           "doc_id": "kzxl93"
         }
       ],
-      "body": "",
       "realName": "吴恩达 Convolutional Neural Networks",
-      "relativePath": "\\Reading\\吴恩达 Convolutional Neural Networks.md"
+      "relativePath": "\\Reading\\吴恩达 Convolutional Neural Networks.md",
+      "docPath": "source\\_posts\\Reading"
     },
     {
       "id": 70121752,
       "doc_id": "xdbdqx",
-      "title": "xdbdqx",
       "updated": 1686756207000,
       "properties": {
         "title": "吴恩达 Neural Networks and Deep Learning deeplearning.ai",
         "urlname": "xdbdqx",
         "date": "2022-03-19 18:28:15",
         "updated": "2023-06-14 23:23:27",
-        "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/0/2022/png/504873/1647756975875-0ea729e1-85c7-4a38-80ed-15e456afa21a.png",
-        "description": "官网：https://www.coursera.org/specializations/deep-learning#abouthttps://player.bilibili.com/player.html?bvid=BV1FT4y1E74V1.2 什么是神经网络（Neural Network）..."
+        "author": "Jason Ma"
       },
       "catalog": [
         {
@@ -437,14 +391,14 @@
           "doc_id": "xdbdqx"
         }
       ],
-      "body": "",
       "realName": "吴恩达 Neural Networks and Deep Learning deeplearning.ai",
-      "relativePath": "\\Reading\\吴恩达 Neural Networks and Deep Learning deeplearning.ai.md"
+      "relativePath": "\\Reading\\吴恩达 Neural Networks and Deep Learning deeplearning.ai.md",
+      "needUpdate": 1,
+      "docPath": "source\\_posts\\Reading"
     },
     {
       "id": 56599362,
       "doc_id": "aoqhq0",
-      "title": "aoqhq0",
       "updated": 1744732223000,
       "properties": {
         "title": "HLSL法线、高度、深度、世界坐标互转",
@@ -452,8 +406,6 @@
         "date": "2021-11-03 10:23:21",
         "updated": "2025-04-15 23:50:23",
         "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/0/2023/webp/504873/1680166725229-ce0f6941-bd77-48a4-b9ab-c958a487e518.webp",
-        "description": "---tags: - Shader---作为TA，在做各种特殊材质时经常会用到Depth和Normal Buffer，以及Depth转WorldPos / Normal等等操作，趁编译引擎时在这里做个笔记，包含UE和Unity中一些常用的代码片段方便日后查阅。 相关知识这篇文章中有非常详细的介...",
         "tags": [
           "Shader"
         ]
@@ -464,23 +416,41 @@
           "doc_id": "aoqhq0"
         }
       ],
-      "body": "",
       "realName": "HLSL法线、高度、深度、世界坐标互转",
-      "relativePath": "\\TA\\HLSL法线、高度、深度、世界坐标互转.md"
+      "relativePath": "\\TA\\HLSL法线、高度、深度、世界坐标互转.md",
+      "docPath": "source\\_posts\\TA"
+    },
+    {
+      "id": 68289742,
+      "doc_id": "dmfp4g",
+      "updated": 1699499278000,
+      "properties": {
+        "title": "吴恩达机器学习系列课程",
+        "urlname": "dmfp4g",
+        "date": "2022-03-04 20:51:39",
+        "updated": "2023-11-09 11:07:58",
+        "author": "Jason Ma"
+      },
+      "catalog": [
+        {
+          "title": "Reading",
+          "doc_id": "dmfp4g"
+        }
+      ],
+      "realName": "吴恩达机器学习系列课程",
+      "relativePath": "\\Reading\\吴恩达机器学习系列课程.md",
+      "docPath": "source\\_posts\\Reading"
     },
     {
       "id": 68677792,
       "doc_id": "zev6pi",
-      "title": "zev6pi",
       "updated": 1689519399000,
       "properties": {
         "title": "卡尔·马克思经济思想的形成 (副本)",
         "urlname": "zev6pi",
         "date": "2022-03-09 00:33:36",
         "updated": "2023-07-16 22:56:39",
-        "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/0/2022/jpeg/504873/1646757415481-0beb2050-ff33-4c5d-927c-2b6699397682.jpeg",
-        "description": "作者: 【比利时】埃内斯特·曼德尔出版社: 光明日报出版社副标题: 从1843年到《资本论》译者: 吕佳翼出版年: 2018-6页数: 218定价: 26元装帧: 平装ISBN: 9787519430030现已几乎全网绝版，没有PDF资源，买不到实体书，不过在B站UP：瞄一瞄中了的专栏中发现了..."
+        "author": "Jason Ma"
       },
       "catalog": [
         {
@@ -488,14 +458,34 @@
           "doc_id": "zev6pi"
         }
       ],
-      "body": "",
       "realName": "卡尔·马克思经济思想的形成 (副本)",
-      "relativePath": "\\Reading\\卡尔·马克思经济思想的形成 (副本).md"
+      "relativePath": "\\Reading\\卡尔·马克思经济思想的形成 (副本).md",
+      "docPath": "source\\_posts\\Reading"
+    },
+    {
+      "id": 53149615,
+      "doc_id": "cdn0ga",
+      "updated": 1695124014000,
+      "properties": {
+        "title": "林超 给年轻人的跨学科通识课",
+        "urlname": "cdn0ga",
+        "date": "2021-09-11 13:32:21",
+        "updated": "2023-09-19 19:46:54",
+        "author": "Jason Ma"
+      },
+      "catalog": [
+        {
+          "title": "Reading",
+          "doc_id": "cdn0ga"
+        }
+      ],
+      "realName": "林超 给年轻人的跨学科通识课",
+      "relativePath": "\\Reading\\林超 给年轻人的跨学科通识课.md",
+      "docPath": "source\\_posts\\Reading"
     },
     {
       "id": 30545536,
       "doc_id": "anpupr",
-      "title": "anpupr",
       "updated": 1744732086000,
       "properties": {
         "title": "Unity Shader矩阵",
@@ -503,8 +493,6 @@
         "date": "2021-01-22 12:07:34",
         "updated": "2025-04-15 23:48:06",
         "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/0/2021/png/504873/1614098323531-65af77f3-2658-4859-9104-dfc9db3b8a44.png",
-        "description": "---tags: - Shader---https://learn.microsoft.com/zh-cn/windows/win32/direct3dhlsl/dx-graphics-hlsl-per-component-math#matrix-ordering构造矩阵按行填充分量 floa...",
         "tags": [
           "Shader"
         ]
@@ -519,71 +507,20 @@
           "doc_id": "anpupr"
         }
       ],
-      "body": "",
       "realName": "Unity Shader矩阵",
-      "relativePath": "\\TA\\Unity\\Unity Shader矩阵.md"
-    },
-    {
-      "id": 68289742,
-      "doc_id": "dmfp4g",
-      "title": "dmfp4g",
-      "updated": 1699499278000,
-      "properties": {
-        "title": "吴恩达机器学习系列课程",
-        "urlname": "dmfp4g",
-        "date": "2022-03-04 20:51:39",
-        "updated": "2023-11-09 11:07:58",
-        "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/0/2022/png/504873/1646407105216-721da485-810e-4541-a31c-78ffacb3f9b1.png",
-        "description": "---title: 吴恩达机器学习系列课程---https://player.bilibili.com/player.html?bvid=BV164411b7dx1-2什么是机器学习机器学习（Machine Learning）一个适当的学习问题定义如下：计算机程序从经验E中学习解决一些任务T，..."
-      },
-      "catalog": [
-        {
-          "title": "Reading",
-          "doc_id": "dmfp4g"
-        }
-      ],
-      "body": "",
-      "realName": "吴恩达机器学习系列课程",
-      "relativePath": "\\Reading\\吴恩达机器学习系列课程.md"
-    },
-    {
-      "id": 53149615,
-      "doc_id": "cdn0ga",
-      "title": "cdn0ga",
-      "updated": 1695124014000,
-      "properties": {
-        "title": "林超 给年轻人的跨学科通识课",
-        "urlname": "cdn0ga",
-        "date": "2021-09-11 13:32:21",
-        "updated": "2023-09-19 19:46:54",
-        "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/0/2021/png/504873/1632616222414-7dde3691-f4f5-41ce-a097-3bc7d3f54f2f.png",
-        "description": "熵和热力学第二定律熵是什么 熵描述了系统可能的状态数，状态越少熵越低越稳定，状态越多熵越高越混乱事物发展往往向着熵更高的方向。混乱是常态，有序是需要刻意营造的。熵增定律在封闭系统中，熵会随着时间的推移增加分子随着时间在2倍大的空间里随机分布，可能的状态数增加，熵增崭新的自行车只有唯一的状态，随..."
-      },
-      "catalog": [
-        {
-          "title": "Reading",
-          "doc_id": "cdn0ga"
-        }
-      ],
-      "body": "",
-      "realName": "林超 给年轻人的跨学科通识课",
-      "relativePath": "\\Reading\\林超 给年轻人的跨学科通识课.md"
+      "relativePath": "\\TA\\Unity\\Unity Shader矩阵.md",
+      "docPath": "source\\_posts\\TA\\Unity"
     },
     {
       "id": 26482904,
       "doc_id": "vbban1",
-      "title": "vbban1",
       "updated": 1686756191000,
       "properties": {
         "title": "3D数学基础 图形和游戏开发",
         "urlname": "vbban1",
         "date": "2020-12-26 20:40:20",
         "updated": "2023-06-14 23:23:11",
-        "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/__latex/a61e6af3dd1a084803ca60014e97e1ea.svg",
-        "description": "---title: 3D数学基础 图形和游戏开发---一 笛卡尔坐标系1.1 一维数学有理数是可数的（与自然数一一对应），实数是不可数的。自然数和整数的研究成为离散数学（Discrete Mathematics）对实数的研究成为连续数学（Continuous Mathematics）计算机图形..."
+        "author": "Jason Ma"
       },
       "catalog": [
         {
@@ -591,23 +528,20 @@
           "doc_id": "vbban1"
         }
       ],
-      "body": "",
       "realName": "3D数学基础 图形和游戏开发",
-      "relativePath": "\\Reading\\3D数学基础 图形和游戏开发.md"
+      "relativePath": "\\Reading\\3D数学基础 图形和游戏开发.md",
+      "docPath": "source\\_posts\\Reading"
     },
     {
       "id": 5864400,
       "doc_id": "mypdxo",
-      "title": "mypdxo",
       "updated": 1686756423000,
       "properties": {
         "title": "GAMES101笔记-现代计算机图形学入门-闫令琪",
         "urlname": "mypdxo",
         "date": "2020-04-04 16:05:31",
         "updated": "2023-06-14 23:27:03",
-        "author": "Jason Ma",
-        "cover": "https://cdn.nlark.com/yuque/__latex/0cc175b9c0f1b6a831c399e269772661.svg#card=math&amp;code=a&amp;height=12&amp;width=8",
-        "description": "---title: GAMES101笔记-现代计算机图形学入门-闫令琪---https://player.bilibili.com/player.html?bvid=BV1X7411F744概览 Overview of Computer Graphics图形学的应用：视频游戏 Video Ga..."
+        "author": "Jason Ma"
       },
       "catalog": [
         {
@@ -615,9 +549,9 @@
           "doc_id": "mypdxo"
         }
       ],
-      "body": "",
       "realName": "GAMES101笔记-现代计算机图形学入门-闫令琪",
-      "relativePath": "\\Reading\\GAMES101笔记-现代计算机图形学入门-闫令琪.md"
+      "relativePath": "\\Reading\\GAMES101笔记-现代计算机图形学入门-闫令琪.md",
+      "docPath": "source\\_posts\\Reading"
     }
   ],
   "catalog": [

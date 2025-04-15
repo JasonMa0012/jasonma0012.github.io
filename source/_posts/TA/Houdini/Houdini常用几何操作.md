@@ -4,10 +4,11 @@ urlname: ompygag6ztknbc30
 date: '2023-06-03 17:05:07'
 updated: '2025-04-15 23:53:32'
 author: Jason Ma
-cover: 'https://cdn.nlark.com/yuque/0/2023/png/504873/1685809427830-3b444944-1f50-4a6e-a870-b85b754661b0.png'
-description: '---tags: - DCC---循环边在拓扑比较特殊, 无法使用Edge Loop时可以使用Poly Bevel替代:修改导入的骨骼名称有根骨骼名字的面前带"+"导致动画无法导入ue, 所以要在houdini中进行骨骼重命名.导入FBX Character后有3个输出查看左侧Rest Geo...'
 tags:
   - DCC
+categories:
+  - TA
+  - Houdini
 ---
 ## 循环边
 在拓扑比较特殊, 无法使用Edge Loop时可以使用Poly Bevel替代:

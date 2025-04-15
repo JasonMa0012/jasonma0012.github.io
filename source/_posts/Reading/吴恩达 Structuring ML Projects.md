@@ -4,8 +4,8 @@ urlname: sopcnn
 date: '2022-03-28 17:00:27'
 updated: '2024-08-25 14:36:16'
 author: Jason Ma
-cover: 'https://cdn.nlark.com/yuque/0/2022/png/504873/1648478785396-6d862bc0-9757-4b34-95ca-7de3cdf5098a.png'
-description: 'https://player.bilibili.com/player.html?bvid=BV1FT4y1E74V&amp;p=84&amp;page=841.1 Why ML Strategy用在优化模型时往往有很多选择，一旦选错了可能白白浪费几个月时间，做出合理的判断、明智的选择非常重要，本课将会传授一些...'
+categories:
+  - Reading
 ---
 [bilibili](https://player.bilibili.com/player.html?bvid=BV1FT4y1E74V&p=84&page=84)
 

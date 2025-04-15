@@ -4,10 +4,11 @@ urlname: fsmrgf7ce2gotyvn
 date: '2023-07-04 10:25:16'
 updated: '2025-04-15 23:52:46'
 author: Jason Ma
-cover: 'https://cdn.nlark.com/yuque/0/2023/png/504873/1688455716241-6b691d04-b8db-4351-9446-64eeb2fba9fa.png'
-description: '---tags: - DCC---材质 / 贴图 不更新Houdini做材质经常遇到Viewport中材质不更新的问题, 是因为Viewport的渲染器使用的是OpenGL, 是不会调用材质VOP的:https://www.sidefx.com/docs/houdini/shade/glsl....'
 tags:
   - DCC
+categories:
+  - TA
+  - Houdini
 ---
 ## 材质 / 贴图 不更新
 Houdini做材质经常遇到Viewport中材质不更新的问题, 是因为Viewport的渲染器使用的是OpenGL, 是不会调用材质VOP的:

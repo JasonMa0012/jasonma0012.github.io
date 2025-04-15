@@ -4,10 +4,11 @@ urlname: ai6iq9ebtbpfqnzd
 date: '2023-03-30 17:17:57'
 updated: '2025-04-15 23:51:56'
 author: Jason Ma
-cover: 'https://cdn.nlark.com/yuque/0/2023/png/504873/1680167939367-719d4322-e450-4ca1-b0bc-d1c0d226db05.png'
-description: '---tags: - Workflow---前提需要从源码打包UE给其他用户使用, 结果打出的包过大.过程尝试使用官方的UAT脚本打包:Engine\Build\BatchFiles\RunUAT.bat BuildGraph -target="Make Installed Build Win...'
 tags:
   - Workflow
+categories:
+  - TA
+  - UE
 ---
 # 前提
 需要从源码打包UE给其他用户使用, 结果打出的包过大.

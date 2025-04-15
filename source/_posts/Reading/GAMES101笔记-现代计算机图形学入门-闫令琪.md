@@ -4,8 +4,8 @@ urlname: mypdxo
 date: '2020-04-04 16:05:31'
 updated: '2023-06-14 23:27:03'
 author: Jason Ma
-cover: 'https://cdn.nlark.com/yuque/__latex/0cc175b9c0f1b6a831c399e269772661.svg#card=math&amp;code=a&amp;height=12&amp;width=8'
-description: "---title: GAMES101笔记-现代计算机图形学入门-闫令琪---https://player.bilibili.com/player.html?bvid=BV1X7411F744概览\_Overview of Computer Graphics图形学的应用：视频游戏 Video Ga..."
+categories:
+  - Reading
 ---
 [bilibili](https://player.bilibili.com/player.html?bvid=BV1X7411F744)
 

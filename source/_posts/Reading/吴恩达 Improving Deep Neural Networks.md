@@ -4,8 +4,8 @@ urlname: mz2vt4
 date: '2022-04-02 15:33:12'
 updated: '2023-06-14 23:23:30'
 author: Jason Ma
-cover: 'https://cdn.nlark.com/yuque/0/2022/png/504873/1648885068639-555df7e8-e2a7-4d36-8ac9-ea3e8a8eb878.png'
-description: 'https://player.bilibili.com/player.html?bvid=BV1FT4y1E74V&amp;p=61&amp;page=612.1 Mini-Batch梯度下降把巨大的数据集分割成很多小的进行训练2.2 理解mini-batch梯度下降每次迭代随机选择mini-batch，所以...'
+categories:
+  - Reading
 ---
 [bilibili](https://player.bilibili.com/player.html?bvid=BV1FT4y1E74V&p=61&page=61)
 

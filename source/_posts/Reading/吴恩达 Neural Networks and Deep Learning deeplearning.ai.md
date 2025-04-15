@@ -4,8 +4,8 @@ urlname: xdbdqx
 date: '2022-03-19 18:28:15'
 updated: '2023-06-14 23:23:27'
 author: Jason Ma
-cover: 'https://cdn.nlark.com/yuque/0/2022/png/504873/1647756975875-0ea729e1-85c7-4a38-80ed-15e456afa21a.png'
-description: '官网：https://www.coursera.org/specializations/deep-learning#abouthttps://player.bilibili.com/player.html?bvid=BV1FT4y1E74V1.2 什么是神经网络（Neural Network）...'
+categories:
+  - Reading
 ---
 
 

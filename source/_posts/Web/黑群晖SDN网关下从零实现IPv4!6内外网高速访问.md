@@ -4,8 +4,8 @@ urlname: dkz03dygqyd5081s
 date: '2024-02-27 00:38:48'
 updated: '2024-06-15 14:36:26'
 author: Jason Ma
-cover: 'https://cdn.nlark.com/yuque/0/2024/png/504873/1709822202321-f3dd4dcd-0e98-42b1-be5c-2bbca28bc6cc.png'
-description: 硬件准备（QNAS mini、网络拓扑、宽带）QNAS mini：N100 CPU，16G内存，2 * 2.5G网口，6 * 2.5寸SATA，买的闲鱼成品公网IPv6地址（打电信客服电话，说要装监控，顺便可以改桥接）光猫  NAS  PC，NAS设置网桥使PC上网黑群晖7.2+安...
+categories:
+  - Web
 ---
 # 硬件准备（QNAS mini、网络拓扑、宽带）
 + QNAS mini：N100 CPU，16G内存，2 * 2.5G网口，6 * 2.5寸SATA，买的闲鱼成品

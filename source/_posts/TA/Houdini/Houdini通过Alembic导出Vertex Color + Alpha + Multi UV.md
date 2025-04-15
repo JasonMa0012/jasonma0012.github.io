@@ -4,10 +4,11 @@ urlname: yf39e891h5yy57f5
 date: '2023-03-30 17:12:22'
 updated: '2025-04-15 23:53:39'
 author: Jason Ma
-cover: 'https://cdn.nlark.com/yuque/0/2023/png/504873/1680167779805-8c0784a9-323a-4bfc-955a-42854db6b702.png'
-description: '---tags: - DCC---Houdini一般(FBX)的导出顶点色的方式是Cd (vector) + Alpha (float), 但如果用ABC导出, 就需要用以下格式:Cd (float4)而且必须用Attribute Create节点, 如果用Attribute Wrangle试...'
 tags:
   - DCC
+categories:
+  - TA
+  - Houdini
 ---
 Houdini一般(FBX)的导出顶点色的方式是Cd (vector) + Alpha (float), 但如果用ABC导出, 就需要用以下格式:
 

@@ -4,10 +4,10 @@ urlname: aoqhq0
 date: '2021-11-03 10:23:21'
 updated: '2025-04-15 23:50:23'
 author: Jason Ma
-cover: 'https://cdn.nlark.com/yuque/0/2023/webp/504873/1680166725229-ce0f6941-bd77-48a4-b9ab-c958a487e518.webp'
-description: '---tags: - Shader---作为TA，在做各种特殊材质时经常会用到Depth和Normal Buffer，以及Depth转WorldPos / Normal等等操作，趁编译引擎时在这里做个笔记，包含UE和Unity中一些常用的代码片段方便日后查阅。 相关知识这篇文章中有非常详细的介...'
 tags:
   - Shader
+categories:
+  - TA
 ---
 作为TA，在做各种特殊材质时经常会用到Depth和Normal Buffer，以及Depth转WorldPos / Normal等等操作，趁编译引擎时在这里做个笔记，包含UE和Unity中一些常用的代码片段方便日后查阅。 
 

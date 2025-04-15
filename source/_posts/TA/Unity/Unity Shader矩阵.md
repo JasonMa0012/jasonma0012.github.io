@@ -4,10 +4,11 @@ urlname: anpupr
 date: '2021-01-22 12:07:34'
 updated: '2025-04-15 23:48:06'
 author: Jason Ma
-cover: 'https://cdn.nlark.com/yuque/0/2021/png/504873/1614098323531-65af77f3-2658-4859-9104-dfc9db3b8a44.png'
-description: '---tags: - Shader---https://learn.microsoft.com/zh-cn/windows/win32/direct3dhlsl/dx-graphics-hlsl-per-component-math#matrix-ordering构造矩阵按行填充分量 floa...'
 tags:
   - Shader
+categories:
+  - TA
+  - Unity
 ---
 [Per-Component数学运算 - Win32 apps](https://learn.microsoft.com/zh-cn/windows/win32/direct3dhlsl/dx-graphics-hlsl-per-component-math#matrix-ordering)
 
